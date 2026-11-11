@@ -1,0 +1,91 @@
+run_accession	rank	species	reads	pct_of_viral_reads
+SRR14300938	1	Homavirus sp.	12024	4.9
+SRR14300938	2	Megaviridae environmental sample	11690	4.8
+SRR14300938	3	Mimiviridae sp. ChoanoV1	10136	4.1
+SRR14300938	4	Fadolivirus FV1/VV64	7049	2.9
+SRR14300938	5	Mimivirus LCMiAC02	6388	2.6
+SRR14300938	6	Human alphaherpesvirus 1 strain RH2	6071	2.5
+SRR14300938	7	Marseillevirus LCMAC201	5771	2.3
+SRR14300938	8	Qianjiang picobirna-like virus 2	5764	2.3
+SRR14300938	9	Tupanvirus deep ocean	5577	2.3
+SRR14300938	10	Marseillevirus LCMAC202	5129	2.1
+SRR14300938	11	Terrestrivirus sp.	5012	2.0
+SRR14300938	12	Bodo saltans virus	4978	2.0
+SRR14300938	13	Chelonia mydas	4656	1.9
+SRR14300938	14	Pyramimonas orientalis virus	4332	1.8
+SRR14300938	15	Human papillomavirus	4192	1.7
+SRR14300939	1	Homavirus sp.	20537	7.6
+SRR14300939	2	Mimiviridae sp. ChoanoV1	14414	5.4
+SRR14300939	3	Megaviridae environmental sample	10065	3.7
+SRR14300939	4	Fadolivirus FV1/VV64	9693	3.6
+SRR14300939	5	Mimivirus LCMiAC02	9450	3.5
+SRR14300939	6	Bodo saltans virus	7646	2.8
+SRR14300939	7	Human alphaherpesvirus 1 strain RH2	7453	2.8
+SRR14300939	8	Tupanvirus deep ocean	7105	2.6
+SRR14300939	9	Qianjiang picobirna-like virus 2	6330	2.4
+SRR14300939	10	Marseillevirus LCMAC201	5701	2.1
+SRR14300939	11	Terrestrivirus sp.	5562	2.1
+SRR14300939	12	Mimivirus LCMiAC01	5537	2.1
+SRR14300939	13	Pyramimonas orientalis virus	5240	1.9
+SRR14300939	14	Virus NIOZ-UU157	4836	1.8
+SRR14300939	15	Hyperionvirus sp.	4701	1.7
+SRR14300940	1	Homavirus sp.	16253	6.3
+SRR14300940	2	Mimiviridae sp. ChoanoV1	12083	4.7
+SRR14300940	3	Mimivirus LCMiAC02	9156	3.5
+SRR14300940	4	Fadolivirus FV1/VV64	8729	3.4
+SRR14300940	5	Megaviridae environmental sample	8435	3.3
+SRR14300940	6	Qianjiang picobirna-like virus 2	7163	2.8
+SRR14300940	7	Tupanvirus deep ocean	6395	2.5
+SRR14300940	8	Pyramimonas orientalis virus	6056	2.3
+SRR14300940	9	Human alphaherpesvirus 1 strain RH2	5768	2.2
+SRR14300940	10	Marseillevirus LCMAC202	5300	2.0
+SRR14300940	11	Marseillevirus LCMAC201	5231	2.0
+SRR14300940	12	Terrestrivirus sp.	5203	2.0
+SRR14300940	13	Bodo saltans virus	5107	2.0
+SRR14300940	14	Mimivirus LCMiAC01	4315	1.7
+SRR14300940	15	Tupanvirus soda lake	4022	1.6
+SRR14300941	1	Qianjiang picobirna-like virus 2	12332	4.1
+SRR14300941	2	Megaviridae environmental sample	11355	3.8
+SRR14300941	3	Homavirus sp.	10209	3.4
+SRR14300941	4	Mimiviridae sp. ChoanoV1	9691	3.2
+SRR14300941	5	Fadolivirus FV1/VV64	9640	3.2
+SRR14300941	6	Virus NIOZ-UU157	8978	3.0
+SRR14300941	7	Pseudo-nitzschia multiseries DNA virus	8837	3.0
+SRR14300941	8	Mimivirus LCMiAC02	7641	2.6
+SRR14300941	9	Terrestrivirus sp.	6571	2.2
+SRR14300941	10	Marseillevirus LCMAC201	6510	2.2
+SRR14300941	11	Human alphaherpesvirus 1 strain RH2	6175	2.1
+SRR14300941	12	Klosneuvirus KNV1	5940	2.0
+SRR14300941	13	Pyramimonas orientalis virus	5863	2.0
+SRR14300941	14	Tupanvirus deep ocean	5370	1.8
+SRR14300941	15	Edafosvirus sp.	5016	1.7
+SRR14300942	1	Homavirus sp.	19729	6.2
+SRR14300942	2	Mimiviridae sp. ChoanoV1	14777	4.7
+SRR14300942	3	Megaviridae environmental sample	12914	4.1
+SRR14300942	4	Fadolivirus FV1/VV64	10554	3.3
+SRR14300942	5	Mimivirus LCMiAC02	10054	3.2
+SRR14300942	6	Human alphaherpesvirus 1 strain RH2	9179	2.9
+SRR14300942	7	Qianjiang picobirna-like virus 2	9068	2.9
+SRR14300942	8	Bodo saltans virus	7581	2.4
+SRR14300942	9	Tupanvirus deep ocean	7576	2.4
+SRR14300942	10	Terrestrivirus sp.	6763	2.1
+SRR14300942	11	Marseillevirus LCMAC201	6469	2.0
+SRR14300942	12	Pyramimonas orientalis virus	6368	2.0
+SRR14300942	13	Virus NIOZ-UU157	5736	1.8
+SRR14300942	14	Mimivirus LCMiAC01	5409	1.7
+SRR14300942	15	Marseillevirus LCMAC202	5228	1.7
+SRR14300943	1	Pseudo-nitzschia multiseries DNA virus	12583	4.5
+SRR14300943	2	Homavirus sp.	10819	3.8
+SRR14300943	3	Megaviridae environmental sample	9975	3.5
+SRR14300943	4	Qianjiang picobirna-like virus 2	9954	3.5
+SRR14300943	5	Mimiviridae sp. ChoanoV1	9338	3.3
+SRR14300943	6	Fadolivirus FV1/VV64	8818	3.1
+SRR14300943	7	Virus NIOZ-UU157	8424	3.0
+SRR14300943	8	Mimivirus LCMiAC02	8031	2.8
+SRR14300943	9	Human alphaherpesvirus 1 strain RH2	6265	2.2
+SRR14300943	10	Marseillevirus LCMAC201	5934	2.1
+SRR14300943	11	Terrestrivirus sp.	5712	2.0
+SRR14300943	12	Pyramimonas orientalis virus	5628	2.0
+SRR14300943	13	Klosneuvirus KNV1	5564	2.0
+SRR14300943	14	Bodo saltans virus	5208	1.8
+SRR14300943	15	Tupanvirus deep ocean	5005	1.8

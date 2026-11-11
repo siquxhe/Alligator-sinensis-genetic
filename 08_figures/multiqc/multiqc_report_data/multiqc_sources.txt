@@ -1,0 +1,19 @@
+Module	Section	Sample Name	Source
+Bowtie 2 / HiSAT2	all_sections	SRR14300938	C:\Users\wuqiy\Documents\workfile\261105\09_tables\SRR14300938.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300938.host_removal	C:\Users\wuqiy\Documents\workfile\261105\09_tables\run_logs\SRR14300938.host_removal.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300939	C:\Users\wuqiy\Documents\workfile\261105\09_tables\SRR14300939.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300939.host_removal	C:\Users\wuqiy\Documents\workfile\261105\09_tables\run_logs\SRR14300939.host_removal.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300940	C:\Users\wuqiy\Documents\workfile\261105\09_tables\SRR14300940.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300940.host_removal	C:\Users\wuqiy\Documents\workfile\261105\09_tables\run_logs\SRR14300940.host_removal.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300941	C:\Users\wuqiy\Documents\workfile\261105\09_tables\SRR14300941.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300941.host_removal	C:\Users\wuqiy\Documents\workfile\261105\09_tables\run_logs\SRR14300941.host_removal.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300942	C:\Users\wuqiy\Documents\workfile\261105\09_tables\SRR14300942.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300942.host_removal	C:\Users\wuqiy\Documents\workfile\261105\09_tables\run_logs\SRR14300942.host_removal.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300943	C:\Users\wuqiy\Documents\workfile\261105\09_tables\SRR14300943.bowtie2.log
+Bowtie 2 / HiSAT2	all_sections	SRR14300943.host_removal	C:\Users\wuqiy\Documents\workfile\261105\09_tables\run_logs\SRR14300943.host_removal.log
+fastp	all_sections	SRR14300938	C:\Users\wuqiy\Documents\workfile\261105\01_qc\SRR14300938.fastp.json
+fastp	all_sections	SRR14300939	C:\Users\wuqiy\Documents\workfile\261105\01_qc\SRR14300939.fastp.json
+fastp	all_sections	SRR14300940	C:\Users\wuqiy\Documents\workfile\261105\01_qc\SRR14300940.fastp.json
+fastp	all_sections	SRR14300941	C:\Users\wuqiy\Documents\workfile\261105\01_qc\SRR14300941.fastp.json
+fastp	all_sections	SRR14300942	C:\Users\wuqiy\Documents\workfile\261105\01_qc\SRR14300942.fastp.json
+fastp	all_sections	SRR14300943	C:\Users\wuqiy\Documents\workfile\261105\01_qc\SRR14300943.fastp.json

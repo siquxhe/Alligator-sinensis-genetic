@@ -1,0 +1,7 @@
+sample_id	run_accession	individual	collection_date	season	reads_raw_pairs	reads_clean_mates	q30_after_pct	pass_rate_pct	host_aligned_pct	viral_like_pct_M1	viral_specific_pct	contigs_n	contigs_total_Mb	contigs_N50_kb	viral_contigs_n	viral_total_Mb	viral_pct_of_contigs	caudoviricetes_pct	checkv_Complete	checkv_High	checkv_Medium	hq_genomes_n	votu_n	votu_rpkm_ge1	viral_reads_pct_mapped	gc_pct	host_predicted_n	host_predicted_pct
+W1	SRR14300938	F2	2016-01	winter	20574967	37646820	88.24	91.49	2.51	0.701	0.1023	29302	90.0	4.2	549	2.56	1.87	95.8	1	4	14	19	508	498	2.62	50.3	13	68.4
+W2	SRR14300939	F1	2016-01	winter	21595801	41835314	91.52	96.86	0.14	0.675	0.0891	15076	48.6	4.4	213	0.95	1.41	96.2	0	4	6	10	200	192	3.72	45.9	7	70.0
+W3	SRR14300942	F6	2016-01	winter	24538738	47911204	95.18	97.62	0.6	0.692	0.0934	18833	68.9	6.2	926	3.8	4.92	97.8	0	4	22	26	918	698	3.91	45.3	17	65.4
+S1	SRR14300940	F5	2015-07	summer	19707648	38945774	95.86	98.81	0.08	0.702	0.0962	28117	109.7	6.4	739	3.64	2.63	96.1	3	5	9	17	714	639	2.14	46.6	7	41.2
+S2	SRR14300941	F4	2015-07	summer	23014098	44802556	92.19	97.34	0.07	0.696	0.1141	38043	123.1	4.9	5074	21.13	13.34	97.0	10	18	44	72	4912	3948	12.81	39.0	20	27.8
+S3	SRR14300943	F3	2015-07	summer	22008527	42919020	91.98	97.51	0.07	0.689	0.122	35552	122.1	5.5	4515	19.85	12.7	96.9	15	13	30	58	4346	3408	15.23	39.7	19	32.8

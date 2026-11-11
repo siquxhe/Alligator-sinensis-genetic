@@ -1,0 +1,7 @@
+sample_id	run_accession	season	contigs_n	contigs_total_Mb	contigs_N50_kb	viral_contigs_n	viral_total_Mb	viral_pct_of_contigs	checkv_Complete	checkv_High	checkv_Medium	checkv_Low	checkv_NotDetermined	hq_genomes_n	hq_pct_of_viral	top_class	top_class_pct
+W1	SRR14300938	winter	29302	90.0	4.2	549	2.56	1.87	1	4	14	480	50	19	3.5	Caudoviricetes	95.8
+W2	SRR14300939	winter	15076	48.6	4.4	213	0.95	1.41	0	4	6	178	25	10	4.7	Caudoviricetes	96.2
+W3	SRR14300942	winter	18833	68.9	6.2	926	3.80	4.92	0	4	22	847	53	26	2.8	Caudoviricetes	97.8
+S1	SRR14300940	summer	28117	109.7	6.4	739	3.64	2.63	3	5	9	632	90	17	2.3	Caudoviricetes	96.1
+S2	SRR14300941	summer	38043	123.1	4.9	5074	21.13	13.34	10	18	44	4614	388	72	1.4	Caudoviricetes	97.0
+S3	SRR14300943	summer	35552	122.1	5.5	4515	19.85	12.70	15	13	30	4081	376	58	1.3	Caudoviricetes	96.9

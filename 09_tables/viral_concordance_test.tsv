@@ -1,0 +1,7 @@
+run_accession	expected_same_taxon_pct	observed_same_taxon_pct	enrichment_fold
+SRR14300938	1.73	43.0	25
+SRR14300939	2.40	38.4	16
+SRR14300942	2.03	39.4	19
+SRR14300940	1.95	41.6	21
+SRR14300941	1.62	36.4	22
+SRR14300943	1.71	39.8	23

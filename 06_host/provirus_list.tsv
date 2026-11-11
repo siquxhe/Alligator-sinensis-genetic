@@ -1,0 +1,34 @@
+sample_id	contig_id	length	completeness	quality	rpkm	host_genus	host_phylum
+S1	k141_69988|provirus_1_37087	37087	95.24	High-quality	5.3526	Roseburia	Firmicutes_A
+S1	k141_39769|provirus_433_34273	33841	100.0	High-quality	66.7643	Bacteroides	Bacteroidota
+S2	k141_24680|provirus_132565_174295	41731	99.53	High-quality	8.2154	Niameybacter	Firmicutes_A
+S2	k141_7202|provirus_7273_40658	33386	68.0	Medium-quality	3.0893		
+S2	k141_68187|provirus_1_25544	25544	52.53	Medium-quality	1.4735	Bacteroides	Bacteroidota
+S2	k141_120710|provirus_35297_60372	25076	58.53	Medium-quality	4.1191		
+S2	k141_2203|provirus_2_21845	21844	52.6	Medium-quality	2.9503		
+S2	k141_49635|provirus_104082_125086	21005	62.02	Medium-quality	1.7962		
+S2	k141_14766|provirus_54479_71449	16971	51.54	Medium-quality	3.0714		
+S3	k141_2024|provirus_9978_51708	41731	99.53	High-quality	9.6904	Niameybacter	Firmicutes_A
+S3	k141_56693|provirus_9150_42966	33817	87.84	Medium-quality	1.6484	Escherichia	Proteobacteria
+S3	k141_6272|provirus_7195_40580	33386	68.0	Medium-quality	3.9656		
+S3	k141_73033|provirus_35542_62369	26828	62.62	Medium-quality	6.3666		
+S3	k141_106998|provirus_83_25423	25341	61.02	Medium-quality	4.5826		
+W1	k141_27977|provirus_15669_72479	56811	84.69	Medium-quality	10.9286	Aeromonas	Proteobacteria
+W1	k141_69425|provirus_28378_55342	26965	90.54	High-quality	2.6873	Hafnia	Proteobacteria
+W1	k141_93866|provirus_15575_37595	22021	68.67	Medium-quality	10.1917	Aeromonas	Proteobacteria
+W2	k141_15056|provirus_298_60670	60373	92.18	High-quality	3.7814	Aeromonas	Proteobacteria
+W2	k141_3134|provirus_22384_65174	42791	95.1	High-quality	50.8784	Bacteroides	Bacteroidota
+W2	k141_33953|provirus_2090_43126	41037	63.93	Medium-quality	4.5421		
+W2	k141_30116|provirus_11698_39183	27486	52.83	Medium-quality	4.4296		
+W2	k141_29940|provirus_4720_24121	19402	67.26	Medium-quality	120.2613	Bacteroides	Bacteroidota
+W3	k141_16815|provirus_258293_301954	43662	91.05	High-quality	5.4956		
+W3	k141_42567|provirus_13320_55314	41995	89.61	Medium-quality	13.5742	Escherichia	Proteobacteria
+W3	k141_46776|provirus_185580_224273	38694	93.39	High-quality	11.3085	Bacteroides	Bacteroidota
+W3	k141_39913|provirus_102971_133780	30810	97.93	High-quality	10.869	Edwardsiella	Proteobacteria
+W3	k141_54772|provirus_43316_73938	30623	88.06	Medium-quality	9.2401	Edwardsiella	Proteobacteria
+W3	k141_41306|provirus_4071_31837	27767	89.64	Medium-quality	68.9603	Bacteroides	Bacteroidota
+W3	k141_20621|provirus_11270_38462	27193	65.71	Medium-quality	95.7345	Bacteroides	Bacteroidota
+W3	k141_10724|provirus_1_26383	26383	69.49	Medium-quality	2.0971	Aeromonas	Proteobacteria
+W3	k141_56059|provirus_446696_471318	24623	53.29	Medium-quality	9.0398	Escherichia	Proteobacteria
+W3	k141_2253|provirus_2_24083	24082	52.59	Medium-quality	10.2881	Chania	Proteobacteria
+W3	k141_11998|provirus_80_22462	22383	62.36	Medium-quality	3.5029		

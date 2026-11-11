@@ -1,0 +1,129 @@
+Virus,AAI to closest RaFAH reference,Host genus,Confidence score,List of methods
+S1|k141_16119|High-quality|97.51|5.3518,43.40,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,98.20,blast;96.10 RaFAH;83.00 iPHoP-RF;78.50
+S1|k141_16119|High-quality|97.51|5.3518,43.40,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Leclercia,95.30,blast;96.70
+S1|k141_16119|High-quality|97.51|5.3518,43.40,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Enterobacter,94.90,blast;96.40
+S1|k141_3098|Medium-quality|73.84|4.6481,31.49,d__Bacteria;p__Desulfobacterota;c__Desulfovibrionia;o__Desulfovibrionales;f__Desulfovibrionaceae;g__Bilophila,93.40,blast;95.30 iPHoP-RF;70.90
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643,70.85,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,blast;98.20 RaFAH;96.80 iPHoP-RF;95.70
+S1|k141_39871|Medium-quality|85.09|19.6907,16.66,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Pygmaiobacter,93.00,blast;95.00 iPHoP-RF;50.40
+S1|k141_46735|Medium-quality|76.1|12.7987,26.87,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter,90.30,iPHoP-RF;92.80
+S1|k141_69356|High-quality|100.0|3.4184,76.19,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Salmonella,95.60,blast;96.90 iPHoP-RF;68.00
+S1|k141_69356|High-quality|100.0|3.4184,76.19,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,95.20,blast;96.60 iPHoP-RF;75.90
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526,66.54,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Roseburia,93.10,iPHoP-RF;95.10 blast;89.20
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526,66.54,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CAG-127,91.60,blast;93.90 iPHoP-RF;53.60
+S2|k141_105237|High-quality|93.42|5.7997,12.18,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium,98.40,blast;94.80 iPHoP-RF;92.40 RaFAH;88.90
+S2|k141_117171|Medium-quality|70.08|1.1003,26.28,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,95.90,iPHoP-RF;97.10
+S2|k141_117171|Medium-quality|70.08|1.1003,26.28,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Ewingella,94.90,iPHoP-RF;96.40
+S2|k141_117171|Medium-quality|70.08|1.1003,26.28,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Lelliottia,90.70,iPHoP-RF;93.10
+S2|k141_120384|Medium-quality|74.16|3.1416,30.08,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,98.20,RaFAH;97.30 iPHoP-RF;75.00
+S2|k141_135505|High-quality|100.0|1.8509,5.55,d__Bacteria;p__Actinobacteriota;c__Actinomycetia;o__Mycobacteriales;f__Mycobacteriaceae;g__Mycobacterium,93.50,iPHoP-RF;95.40
+S2|k141_135900|Complete|100.0|2.8285,12.59,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Sphingobacteriales;f__Sphingobacteriaceae;g__Albibacterium,97.00,blast;97.90
+S2|k141_135903|Medium-quality|69.55|1.0543,11.22,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Vibrionaceae;g__Vibrio,91.20,RaFAH;93.60
+S2|k141_135904|Complete|100.0|4.6691,6.06,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__GCA-900066495,94.50,iPHoP-RF;96.10
+S2|k141_24680|provirus_132565_174295|High-quality|99.53|8.2154,21.42,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Cellulosilyticaceae;g__Niameybacter,94.00,blast;95.80 iPHoP-RF;57.90
+S2|k141_27149|Medium-quality|59.3|1.7673,45.31,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,91.60,RaFAH;90.40 iPHoP-RF;68.40
+S2|k141_28761|Complete|100.0|3.7804,22.51,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Clostridioides,95.30,iPHoP-RF;96.70
+S2|k141_28761|Complete|100.0|3.7804,22.51,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Romboutsia,95.30,iPHoP-RF;96.70 CRISPR;70.20
+S2|k141_28761|Complete|100.0|3.7804,22.51,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__GCA-900066495,93.10,iPHoP-RF;95.10
+S2|k141_28761|Complete|100.0|3.7804,22.51,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Intestinibacter,91.40,iPHoP-RF;93.70
+S2|k141_28761|Complete|100.0|3.7804,22.51,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Terrisporobacter,90.70,iPHoP-RF;93.10
+S2|k141_28761|Complete|100.0|3.7804,22.51,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Romboutsia_A,90.30,iPHoP-RF;92.80
+S2|k141_47228|Complete|100.0|7.298,53.61,d__Archaea;p__Thermoproteota;c__Thermoproteia;o__;f__;g__,92.20,iPHoP-RF;94.40
+S2|k141_47228|Complete|100.0|7.298,53.61,d__Archaea;p__Thermoproteota;c__Thermoproteia;o__Thermofilales;f__;g__,90.70,iPHoP-RF;93.10
+S2|k141_54107|High-quality|96.38|2.5212,67.55,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium,91.60,blast;93.90 iPHoP-RF;84.20
+S2|k141_56158|High-quality|99.16|1.4125,15.97,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium,93.80,blast;93.80 iPHoP-RF;82.80 RaFAH;64.70
+S2|k141_61967|Medium-quality|53.25|1.9075,25.80,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Plesiomonas,93.00,blast;95.00 iPHoP-RF;64.30
+S2|k141_68187|provirus_1_25544|Medium-quality|52.53|1.4735,12.89,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,95.30,RaFAH;96.70
+S2|k141_70410|High-quality|100.0|17.9559,17.11,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__UBA12018,91.60,blast;93.90 iPHoP-RF;65.30
+S2|k141_73356|High-quality|100.0|2.4364,5.51,d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium,97.60,RaFAH;98.30
+S2|k141_73356|High-quality|100.0|2.4364,5.51,d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium_A,97.60,RaFAH;98.30
+S2|k141_73356|High-quality|100.0|2.4364,5.51,d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium_C,97.60,RaFAH;98.30
+S2|k141_76676|Medium-quality|57.83|1.2077,5.59,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Methylococcales;f__Methylomonadaceae;g__Methylobacter_A,90.80,blast;93.20 iPHoP-RF;84.20
+S2|k141_87114|Medium-quality|58.56|1.1875,2.55,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Pectobacterium,91.00,iPHoP-RF;93.40
+S2|k141_90502|Medium-quality|57.44|2.3502,80.34,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Plesiomonas,93.50,blast;95.40 iPHoP-RF;58.40
+S2|k141_90502|Medium-quality|57.44|2.3502,80.34,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Hafnia,91.50,blast;93.80 iPHoP-RF;64.80
+S3|k141_100088|Medium-quality|63.52|1.7993,40.89,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Yersinia,95.90,iPHoP-RF;97.10
+S3|k141_100088|Medium-quality|63.52|1.7993,40.89,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Serratia_A,93.90,iPHoP-RF;95.70
+S3|k141_100088|Medium-quality|63.52|1.7993,40.89,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella,91.00,iPHoP-RF;93.40
+S3|k141_116966|Medium-quality|73.5|4.8136,30.08,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,98.40,RaFAH;97.30 iPHoP-RF;78.70
+S3|k141_120077|Complete|100.0|2.4201,15.97,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium,93.80,blast;93.80 iPHoP-RF;86.00 RaFAH;64.70
+S3|k141_120081|Complete|100.0|4.1873,6.06,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__GCA-900066495,93.50,iPHoP-RF;95.40
+S3|k141_120081|Complete|100.0|4.1873,6.06,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Asaccharospora,90.30,iPHoP-RF;92.80
+S3|k141_14795|Medium-quality|51.78|0.8273,11.37,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Vibrionaceae;g__Vibrio,95.70,RaFAH;97.00
+S3|k141_14795|Medium-quality|51.78|0.8273,11.37,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,90.30,iPHoP-RF;92.80
+S3|k141_2024|provirus_9978_51708|High-quality|99.53|9.6904,21.42,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Cellulosilyticaceae;g__Niameybacter,94.00,blast;95.80 iPHoP-RF;57.90
+S3|k141_20826|Medium-quality|68.31|2.4821,4.67,d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium,97.90,RaFAH;98.50
+S3|k141_20826|Medium-quality|68.31|2.4821,4.67,d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium_A,97.90,RaFAH;98.50
+S3|k141_20826|Medium-quality|68.31|2.4821,4.67,d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium_C,97.90,RaFAH;98.50
+S3|k141_50768|Complete|100.0|3.6266,18.04,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Clostridioides,95.30,iPHoP-RF;96.70
+S3|k141_50768|Complete|100.0|3.6266,18.04,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Romboutsia,95.30,iPHoP-RF;96.70 CRISPR;70.20
+S3|k141_50768|Complete|100.0|3.6266,18.04,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__GCA-900066495,93.10,iPHoP-RF;95.10
+S3|k141_50768|Complete|100.0|3.6266,18.04,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Intestinibacter,91.80,iPHoP-RF;94.10
+S3|k141_50768|Complete|100.0|3.6266,18.04,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Terrisporobacter,90.70,iPHoP-RF;93.10
+S3|k141_54223|Medium-quality|67.89|0.5896,11.22,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Vibrionaceae;g__Vibrio,91.20,RaFAH;93.60
+S3|k141_56693|provirus_9150_42966|Medium-quality|87.84|1.6484,57.37,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,99.60,RaFAH;97.20 blast;92.40 iPHoP-RF;54.60
+S3|k141_56693|provirus_9150_42966|Medium-quality|87.84|1.6484,57.37,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter_A,90.70,blast;93.10 iPHoP-RF;50.70
+S3|k141_56693|provirus_9150_42966|Medium-quality|87.84|1.6484,57.37,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella,90.60,blast;93.00 iPHoP-RF;75.70 CRISPR;65.40
+S3|k141_61207|Medium-quality|79.34|2.2323,85.96,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Plesiomonas,93.80,blast;95.60 iPHoP-RF;78.00
+S3|k141_61207|Medium-quality|79.34|2.2323,85.96,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Hafnia,91.40,iPHoP-RF;93.70 blast;93.00
+S3|k141_6160|Medium-quality|60.32|2.8812,16.77,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Cellulosilyticaceae;g__Niameybacter,93.90,blast;95.70 iPHoP-RF;75.00
+S3|k141_70785|Medium-quality|56.27|2.6042,45.31,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,95.20,RaFAH;89.90 iPHoP-RF;83.30
+S3|k141_74935|Medium-quality|70.69|1.3214,15.85,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Lachnospirales;f__Cellulosilyticaceae;g__Niameybacter,91.20,blast;93.60 iPHoP-RF;79.50
+S3|k141_79290|Complete|100.0|1.6767,23.32,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,90.70,iPHoP-RF;93.10
+S3|k141_89795|Complete|100.0|3.5732,4.76,d__Bacteria;p__Firmicutes;c__Bacilli;o__Staphylococcales;f__Staphylococcaceae;g__Staphylococcus,90.70,iPHoP-RF;93.10
+S3|k141_92144|High-quality|93.42|7.4966,12.18,d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium,98.40,blast;94.80 iPHoP-RF;92.40 RaFAH;88.90
+S3|k141_95487|Medium-quality|51.86|4.5751,20.42,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,90.20,RaFAH;89.60 iPHoP-RF;65.10
+S3|k141_96238|Complete|100.0|2.0373,10.31,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Sphingobacteriales;f__Sphingobacteriaceae;g__Albibacterium,97.00,blast;97.90 iPHoP-RF;50.20
+W1|k141_14364|High-quality|100.0|8.4121,43.92,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,99.90,iPHoP-RF;97.10 RaFAH;96.00 blast;94.50
+W1|k141_16129|Medium-quality|77.45|1.8598,86.14,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Pseudescherichia,94.20,blast;95.90
+W1|k141_16129|Medium-quality|77.45|1.8598,86.14,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Enterobacter,93.60,blast;95.50 iPHoP-RF;53.80
+W1|k141_26133|Medium-quality|76.81|2.7105,6.62,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter,90.20,blast;92.70 iPHoP-RF;78.70
+W1|k141_27977|provirus_15669_72479|Medium-quality|84.69|10.9286,62.46,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,94.70,blast;96.30 CRISPR;95.70 iPHoP-RF;94.40
+W1|k141_31848|Medium-quality|81.54|10.2594,52.33,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,92.00,blast;94.20
+W1|k141_46762|Medium-quality|78.45|9.5409,78.56,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,92.70,blast;94.80 iPHoP-RF;90.10
+W1|k141_61237|Medium-quality|85.23|2.7995,15.69,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Shewanellaceae;g__Shewanella,95.90,iPHoP-RF;97.10 blast;96.60 CRISPR;80.20
+W1|k141_64876|Medium-quality|82.14|32.5905,61.80,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;99.10 iPHoP-RF;96.10 blast;94.00
+W1|k141_69425|provirus_28378_55342|High-quality|90.54|2.6873,58.58,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Hafnia,95.90,iPHoP-RF;97.10 blast;96.00
+W1|k141_69425|provirus_28378_55342|High-quality|90.54|2.6873,58.58,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Pectobacterium,94.90,iPHoP-RF;96.40
+W1|k141_69425|provirus_28378_55342|High-quality|90.54|2.6873,58.58,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Yersinia,90.70,iPHoP-RF;93.10
+W1|k141_85443|Medium-quality|78.53|13.3105,54.56,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;98.70 iPHoP-RF;97.10 blast;95.30
+W1|k141_87676|Medium-quality|50.44|2.7342,60.34,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia_C,90.00,blast;92.50 iPHoP-RF;85.70
+W1|k141_93811|Medium-quality|52.6|19.2971,61.77,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,95.70,blast;94.90 iPHoP-RF;84.50 RaFAH;70.50
+W1|k141_93866|provirus_15575_37595|Medium-quality|68.67|10.1917,52.76,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,94.60,blast;96.20 iPHoP-RF;95.40
+W2|k141_15056|provirus_298_60670|High-quality|92.18|3.7814,35.16,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,95.00,blast;96.50 iPHoP-RF;89.50 CRISPR;63.10
+W2|k141_23257|Medium-quality|58.31|3.0684,53.01,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,95.00,blast;96.50 iPHoP-RF;92.80 CRISPR;68.20
+W2|k141_29940|provirus_4720_24121|Medium-quality|67.26|120.2613,61.89,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;98.70 blast;95.10 iPHoP-RF;92.10
+W2|k141_3134|provirus_22384_65174|High-quality|95.1|50.8784,62.13,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;98.40 iPHoP-RF;96.70 blast;93.20
+W2|k141_5642|Medium-quality|52.53|1.4174,85.35,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,92.10,blast;93.00 RaFAH;59.00 iPHoP-RF;55.20
+W2|k141_8852|Medium-quality|67.64|133.3954,57.99,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;98.00 iPHoP-RF;96.70 blast;94.10
+W2|k141_9843|High-quality|100.0|2.837,75.88,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,97.20,blast;96.70 iPHoP-RF;96.40 RaFAH;69.90
+W3|k141_10724|provirus_1_26383|Medium-quality|69.49|2.0971,73.25,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas,95.60,blast;95.40 iPHoP-RF;93.10 RaFAH;65.80 CRISPR;54.10
+W3|k141_13470|High-quality|96.46|2.3189,11.43,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,92.90,iPHoP-RF;92.40 RaFAH;66.60 CRISPR;63.90
+W3|k141_19239|Medium-quality|51.42|1.7673,88.69,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Salmonella,98.80,blast;96.10 iPHoP-RF;90.10 RaFAH;88.40
+W3|k141_19239|Medium-quality|51.42|1.7673,88.69,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter,95.20,blast;96.60 iPHoP-RF;73.50
+W3|k141_19239|Medium-quality|51.42|1.7673,88.69,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,93.10,blast;95.10 iPHoP-RF;85.40
+W3|k141_20621|provirus_11270_38462|Medium-quality|65.71|95.7345,57.99,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;98.00 iPHoP-RF;96.40 blast;94.10
+W3|k141_2253|provirus_2_24083|Medium-quality|52.59|10.2881,80.35,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Chania,93.90,iPHoP-RF;95.70
+W3|k141_2253|provirus_2_24083|Medium-quality|52.59|10.2881,80.35,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Yersinia,93.50,iPHoP-RF;95.40
+W3|k141_2253|provirus_2_24083|Medium-quality|52.59|10.2881,80.35,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edaphovirga,92.20,iPHoP-RF;94.40
+W3|k141_2253|provirus_2_24083|Medium-quality|52.59|10.2881,80.35,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Serratia_A,91.80,iPHoP-RF;94.10
+W3|k141_2253|provirus_2_24083|Medium-quality|52.59|10.2881,80.35,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella,91.60,blast;93.90 iPHoP-RF;87.60
+W3|k141_3420|Medium-quality|58.05|28.6318,34.91,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,99.40,iPHoP-RF;96.40 blast;96.30 RaFAH;93.50
+W3|k141_35738|Medium-quality|73.96|1.5595,6.53,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__SYFN01,94.70,blast;96.30
+W3|k141_38021|Medium-quality|54.0|1.8945,34.12,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Plesiomonas,91.80,blast;94.10 iPHoP-RF;69.50
+W3|k141_39913|provirus_102971_133780|High-quality|97.93|10.869,45.61,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella,93.10,blast;95.10 iPHoP-RF;61.40
+W3|k141_41306|provirus_4071_31837|Medium-quality|89.64|68.9603,61.89,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,100.00,RaFAH;98.30 blast;95.60 iPHoP-RF;80.30
+W3|k141_42567|provirus_13320_55314|Medium-quality|89.61|13.5742,39.26,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,95.00,blast;96.50 iPHoP-RF;68.20
+W3|k141_42567|provirus_13320_55314|Medium-quality|89.61|13.5742,39.26,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter,90.80,blast;93.20
+W3|k141_46776|provirus_185580_224273|High-quality|93.39|11.3085,8.89,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,93.40,RaFAH;92.60 iPHoP-RF;68.40
+W3|k141_52071|Medium-quality|58.17|3.7264,78.59,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,98.80,blast;96.60 iPHoP-RF;92.80 RaFAH;86.50
+W3|k141_52071|Medium-quality|58.17|3.7264,78.59,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter,95.40,blast;96.80 iPHoP-RF;67.70
+W3|k141_54171|Medium-quality|55.24|1.6716,47.36,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,96.00,iPHoP-RF;93.10 blast;91.90 RaFAH;79.60
+W3|k141_54171|Medium-quality|55.24|1.6716,47.36,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Erwinia,93.50,iPHoP-RF;95.40 blast;89.60
+W3|k141_54171|Medium-quality|55.24|1.6716,47.36,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Citrobacter,91.70,blast;94.00
+W3|k141_54171|Medium-quality|55.24|1.6716,47.36,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Salmonella,90.70,iPHoP-RF;93.10 blast;92.10
+W3|k141_54772|provirus_43316_73938|Medium-quality|88.06|9.2401,80.14,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella,93.20,blast;95.20 iPHoP-RF;65.10
+W3|k141_54772|provirus_43316_73938|Medium-quality|88.06|9.2401,80.14,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,92.70,blast;94.80 iPHoP-RF;77.50
+W3|k141_54772|provirus_43316_73938|Medium-quality|88.06|9.2401,80.14,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Serratia,90.40,blast;92.90
+W3|k141_56059|provirus_446696_471318|Medium-quality|53.29|9.0398,43.66,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Escherichia,93.50,RaFAH;95.40
+W3|k141_56059|provirus_446696_471318|Medium-quality|53.29|9.0398,43.66,d__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Edwardsiella,91.70,blast;94.00 iPHoP-RF;88.20
+W3|k141_7277|Medium-quality|52.76|28.5667,45.55,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides,99.70,blast;98.30 iPHoP-RF;96.70 RaFAH;90.10

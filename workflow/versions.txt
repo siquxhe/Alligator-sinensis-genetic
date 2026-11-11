@@ -1,0 +1,73 @@
+# 工具与环境版本记录
+# 项目：扬子鳄粪便病毒组预分析（PRJNA539906）
+# 更新：2026-11-07 12:55 (GMT+8)
+
+## 运行环境
+- OS: Windows 10 (MINGW64_NT-10.0-19045)
+- CPU: 12 逻辑核 / 内存 15.3 GB
+- Shell: GNU bash (Git Bash / PortableGit 1.3.0)
+- Python: 3.13.14（WorkBuddy 内置；multiqc 用独立 venv）
+- Java: 1.8.0_181（Oracle JRE）
+
+## 已安装工具（任务 A4）
+| 工具 | 版本 | 路径 | 用途 | 来源 |
+|---|---|---|---|---|
+| fastp | 1.0.1 | workflow/tools/fastp/bin/fastp.exe | 质控（B1） | Zenodo 归档的 Windows 构建 |
+| bowtie2 | 2.5.5 (mingw-x86_64) | workflow/tools/bowtie2/ | 去宿主比对（B2/A5） | GitHub Releases |
+| perl | 5.42.3 (Strawberry, portable) | workflow/tools/perl/perl/bin/perl.exe | 驱动 bowtie2 包装脚本 | GitHub Releases |
+| DIAMOND | 2.2.8 | workflow/tools/diamond/diamond.exe | 病毒蛋白比对（B4，替代 kraken2） | GitHub Releases |
+| Picard | 2.27.5 | workflow/tools/picard/picard.jar | BAM 处理（替代 samtools） | GitHub Releases |
+| multiqc | 见下 | workflow/tools/multiqc-venv/ | 报告汇总 | PyPI（阿里云镜像） |
+
+校验值（下载后逐一核对过）：
+- fastp-windows.zip  md5 f7bfdd09b1de6481fcdb6c2898e9b6cc
+- bowtie2-2.5.5-mingw-x86_64.zip  sha256 77bfac3a84c54f4032ee851c19917802decc1b28083ce17a5f92a0c4d729bdba
+- diamond-windows.zip  sha256 8035ece14562e13576da6e9583c74ab1aaff9d0c96086d93ab337e95cd288ce1
+- strawberry-perl-5.42.3.1-64bit-portable.zip  sha256 6a081a811781c30aca51dbc036afd93092af91e3297901f02c17043795a10690
+
+## 统一入口
+所有脚本用 `source workflow/env.sh` 拿工具路径；直接 `bash workflow/env.sh` 可打印工具链自检。
+
+## 关键环境适配（务必看）
+1. **perl 必须带 C locale**：`LC_ALL=C LANG=C`。否则 Strawberry Perl 会刷满 locale 警告
+   （Git Bash 默认 LC_ALL=C.UTF-8，Perl 不认）。env.sh 里已设。
+2. **bowtie2 的 `--un-conc` / `--un` 是 perl 包装脚本实现的**，底层二进制 `bowtie2-align-s.exe`
+   根本不支持（传了会打印用法并抛 `internal exception #1`）。所以去宿主必须走 wrapper：
+   `perl workflow/tools/bowtie2/bowtie2 ...`
+3. **`-S` 不能给 `/dev/null`**：包装脚本要回读 SAM 来拆分未比对 reads，给 /dev/null 会静默不产出
+   `--un-conc-gz` 文件（退出码还是 0，很容易误判成功）。用一个临时 SAM，配合 `--no-unal`
+   时 SAM 只含比对上的少量 reads（实测 1 万对 reads 约 3.3 MB），跑完即删。
+4. **fastp 是 cygwin 构建**：依赖同目录的 cygwin1.dll 等，必须整目录保留，不能只拷 exe。
+5. **结束 Windows 原生进程要用 Stop-Process**：Git Bash 的 `kill` 对它们无效。
+6. **批量删除会被安全策略拦**（venv 这类上千文件目录），别在脚本里 `rm -rf` 大目录。
+
+## 替代方案（原计划工具在 Windows 不可用）
+| 原计划 | 实际情况 | 采用方案 |
+|---|---|---|
+| samtools | 官方无 Windows 二进制；bioconda/conda-forge win-64 均无；第三方 msys2 版（2016 年）缺 3 个运行库（msys-crypto-1.0.0 / curl-4 / ncursesw6）跑不起来 | **Picard 2.27.5**（Java，已可用）：SortSam / BuildBamIndex / MarkDuplicates / BamIndexStats |
+| kraken2 | 官方仅支持 Linux（需 WSL/Cygwin 编译），本机 WSL 被禁用 | **DIAMOND 2.2.8** 比对病毒蛋白库（任务表 B4 已列此备选） |
+| SortMeRNA（B3，可选） | 无 Windows 版 | 跳过；DNA 宏基因组按计划本就可跳 |
+
+## 索引构建记录（任务 A5）
+- 参考序列：`00_raw/GCA_000455745.1.fa`（Alligator sinensis, ASM455745v1）
+  - 3.0 GB，70,173 条序列，3,112,288,054 bp
+- 命令：`bowtie2-build-s.exe --packed --bmaxdivn 16 --threads 6 -f GCA_000455745.1.fa alligator_host`
+  - `--packed` 省内存（峰值从 10 GB 降到 4.5 GB）；`--bmaxdivn 16` 减小分块
+  - 耗时约 50 分钟
+- 输出：`00_raw/alligator_host.{1,2,3,4,rev.1,rev.2}.bt2`，6 个文件 4.1 GB
+- 验证：`bowtie2-inspect-s.exe -s alligator_host` 正常读出 70,173 条序列
+
+## 冒烟测试（2026-11-07）
+- fastp：SRR14300940 前 1 万对 reads，1 秒完成；前 5 万对（gz 输入）→ 100,000 条中 99,102 条通过（99.10%）
+- bowtie2 + --un-conc-gz：SRR14300940 前 1 万对，`0.13% overall alignment rate`，
+  正确产出 9,850 对未比对 reads（与日志中 "9850 pairs aligned 0 times" 一致）
+- DIAMOND / Picard / multiqc：见 toolchain_check 输出
+
+## 仍未就绪（后续阶段需要）
+- MEGAHIT（C1 组装）、geNomad / CheckV（C2–C3）：均无 Windows 版，需 Linux 环境或替代
+- MetaBAT2 / MaxBin2 / DAS Tool / dRep / CheckM2 / GTDB-Tk（D 阶段）：同上
+- iPHoP（E3）、MMseqs2（C4）
+- 病毒参考库：RefSeq viral protein 未下（NCBI 直连被阻断）；
+  RVDB（https://rvdb-prot.pasteur.fr/）可达，可作为 DIAMOND 的库来源
+- 备注：Strawberry Perl 自带 gcc/make，理论上可自己编译 samtools/htslib，但 mingw 下
+  htslib 构建麻烦，暂不尝试

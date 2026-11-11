@@ -1,0 +1,104 @@
+# ============================================================
+# Alligator sinensis 肠道病毒组 / 病因学项目
+# 只入库：代码、结果表、图、文档
+# 不入库：原始数据、中间产物、外部工具、二进制
+# ============================================================
+
+# ---------- 原始与中间数据 ----------
+/00_raw/
+/00_db/
+/01_qc/
+/02_host_removed/
+/03_assembly/
+/04_viral/
+/05_mag/
+/06_crispr/
+/07_mag/
+/07_network/
+/metadata/
+
+# ---------- 外部工具链（2.1 G，可重新安装）----------
+/workflow/tools/
+
+# ---------- 序列、索引、比对文件 ----------
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.fasta
+*.fa
+*.fna
+*.faa
+*.ffn
+*.gff
+*.gff3
+*.bam
+*.sam
+*.cram
+*.bai
+*.sai
+*.bt2
+*.ebwt
+*.idx
+*.mmi
+*.dmnd
+*.hmm
+*.h3m
+*.h3i
+*.h3f
+*.h3p
+
+# ---------- 归档与虚拟磁盘 ----------
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+*.img
+*.qcow2
+*.vhd
+*.vhdx
+*.vmdk
+*.iso
+
+# ---------- 运行产物 ----------
+*.log
+*.tmp
+*.pid
+*.lock
+nohup.out
+
+# ---------- Python / 环境 ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------- 系统与编辑器 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.swp
+*~
+.vscode/
+.idea/
+
+# ---------- 明确保留（防止被上面的通配误伤）----------
+!05_c_stage/*.tsv
+!06_host/*.tsv
+!07_cargo/*.tsv
+!09_tables/*.tsv
+!09_tables/*.csv
+!09_tables/**/*.tsv
+!08_figures/**/*.pdf
+!08_figures/**/*.png
+!workflow/*.py
+!workflow/*.sh
+
+# ---------- WorkBuddy 工作记录 ----------
+.workbuddy/

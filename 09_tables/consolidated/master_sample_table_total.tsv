@@ -1,0 +1,2 @@
+sample_id	reads_raw_pairs	reads_clean_mates	contigs_n	contigs_total_Mb	viral_contigs_n	viral_total_Mb	checkv_Complete	checkv_High	checkv_Medium	hq_genomes_n	host_predicted_n
+TOTAL	131439779	254060688	164923	562.4	12016	51.93	29	48	125	202	83

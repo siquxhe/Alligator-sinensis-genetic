@@ -1,0 +1,21 @@
+指标	数值	说明
+总病毒 contigs	12016	
+总 vOTU 数	9980	
+clustering 归并率	16.9%	被合并的 contig 比例
+W1 的 contig 数	549	
+W1 的 vOTU 数	508	占该样本 contig 的 92.5%
+W2 的 contig 数	213	
+W2 的 vOTU 数	200	占该样本 contig 的 93.9%
+W3 的 contig 数	926	
+W3 的 vOTU 数	918	占该样本 contig 的 99.1%
+S1 的 contig 数	739	
+S1 的 vOTU 数	714	占该样本 contig 的 96.6%
+S2 的 contig 数	5074	
+S2 的 vOTU 数	4912	占该样本 contig 的 96.8%
+S3 的 contig 数	4515	
+S3 的 vOTU 数	4346	占该样本 contig 的 96.3%
+单样本特有 vOTU	8430	84.5%
+跨 ≥2 样本共享 vOTU	1550	15.5%
+六样本共有 vOTU	0	
+仅冬季出现（2-3 个冬样本）	9868	严格单季节
+跨季节 vOTU	112	冬夏都检出

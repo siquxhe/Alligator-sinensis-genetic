@@ -1,0 +1,22 @@
+指标	数值	说明
+CRISPR 严格命中（≤1 mismatch, ≥30bp）	155	
+涉及病毒 contig	24	占 202 条的 11.9%
+其中宿主可注释的病毒	14	
+宿主属: Rhodanobacter	4	spacer 条数
+宿主属: Flectobacillus	4	spacer 条数
+宿主属: Tenebrionibacter	3	spacer 条数
+宿主属: QHVH01	2	spacer 条数
+宿主属: Acetanaerobacterium	2	spacer 条数
+宿主属: Pseudomonas_B	2	spacer 条数
+宿主属: Kosakonia	2	spacer 条数
+宿主属: Enterobacter	2	spacer 条数
+宿主属: Cetobacterium_A	2	spacer 条数
+宿主属: Thiopseudomonas	2	spacer 条数
+宿主属: Parvibacillus	2	spacer 条数
+宿主属: Stenotrophomonas	1	spacer 条数
+宿主门: Pseudomonadota	27	spacer 条数
+宿主门: Bacillota	11	spacer 条数
+宿主门: Bacteroidota	7	spacer 条数
+宿主门: Acidobacteriota	2	spacer 条数
+宿主门: Fusobacteriota	2	spacer 条数
+宿主门: Thermoplasmatota	1	spacer 条数

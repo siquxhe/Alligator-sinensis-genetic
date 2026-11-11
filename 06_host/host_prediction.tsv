@@ -1,0 +1,156 @@
+virus_contig	host_genome	host_phylum	host_family	host_genus	identity	aln_len	mismatch	annotated
+S1|k141_46106|Medium-quality|52.87|1.7511	NA				96.97	33	1	no
+S1|k141_10352|Complete|100.0|3.627	NA				96.667	30	1	no
+S1|k141_47811|Medium-quality|52.35|5.9255	NA				96.667	30	1	no
+S1|k141_3098|Medium-quality|73.84|4.6481	NA				100.0	31	0	no
+S1|k141_3098|Medium-quality|73.84|4.6481	NA				96.875	32	1	no
+S1|k141_3098|Medium-quality|73.84|4.6481	NA				96.774	31	1	no
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_021545845.1	Pseudomonadota	Rhodanobacteraceae	Rhodanobacter	100.0	31	0	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_021545845.1	Pseudomonadota	Rhodanobacteraceae	Rhodanobacter	96.875	32	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_021545845.1	Pseudomonadota	Rhodanobacteraceae	Rhodanobacter	96.667	30	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_003222245.1	Acidobacteriota	UBA7656	QHVH01	97.143	35	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_003222245.1	Acidobacteriota	UBA7656	QHVH01	97.059	34	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_023415575.1	Bacillota	Ruminococcaceae	Acetanaerobacterium	97.143	35	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_023415575.1	Bacillota	Ruminococcaceae	Acetanaerobacterium	96.97	33	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	NA				97.059	34	1	no
+S1|k141_39871|Medium-quality|85.09|19.6907	NA				97.059	34	1	no
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_030711595.1	Pseudomonadota	Xanthomonadaceae	Stenotrophomonas	96.875	32	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_006384975.1	Pseudomonadota	Pseudomonadaceae	Pseudomonas_B	96.875	32	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_006384975.1	Pseudomonadota	Pseudomonadaceae	Pseudomonas_B	96.774	31	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_036620675.1	Pseudomonadota	Enterobacteriaceae	Jejubacter	96.875	32	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_016415625.1	Pseudomonadota	Enterobacteriaceae	Shimwellia	96.774	31	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_001898415.1	Pseudomonadota	Rhodanobacteraceae	Rhodanobacter	96.774	31	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCF_007004665.1	Pseudomonadota	Kiloniellaceae	Denitrobaculum	96.667	30	1	yes
+S1|k141_39871|Medium-quality|85.09|19.6907	GCA_905235205.1	Bacillota	CAG-138	UBA3792	96.667	30	1	yes
+S1|k141_67614|Medium-quality|65.54|4.3593	GCA_934120675.1	Bacillota	CAG-508	CAG-269	96.774	31	1	yes
+S1|k141_69356|High-quality|100.0|3.4184	GCA_913775305.1	Pseudomonadota	Enterobacteriaceae	Erwinia	100.0	31	0	yes
+S1|k141_69356|High-quality|100.0|3.4184	GCF_001975225.1	Pseudomonadota	Enterobacteriaceae	Kosakonia	96.97	33	1	yes
+S1|k141_69356|High-quality|100.0|3.4184	GCF_001975225.1	Pseudomonadota	Enterobacteriaceae	Kosakonia	96.97	33	1	yes
+S1|k141_69356|High-quality|100.0|3.4184	NA				96.97	33	1	no
+S1|k141_69356|High-quality|100.0|3.4184	NA				96.97	33	1	no
+S1|k141_69356|High-quality|100.0|3.4184	GCF_021049305.1	Pseudomonadota	Burkholderiaceae	Ideonella	96.875	32	1	yes
+S1|k141_69356|High-quality|100.0|3.4184	IMG_3300039826				96.875	32	1	no
+S1|k141_69356|High-quality|100.0|3.4184	IMG_3300025128				96.875	32	1	no
+S1|k141_69356|High-quality|100.0|3.4184	NA				96.875	32	1	no
+S1|k141_69356|High-quality|100.0|3.4184	NA				96.875	32	1	no
+S1|k141_16119|High-quality|97.51|5.3518	NA				100.0	33	0	no
+S1|k141_16119|High-quality|97.51|5.3518	GCF_009907385.1	Pseudomonadota	Enterobacteriaceae	Atlantibacter	100.0	32	0	yes
+S1|k141_16119|High-quality|97.51|5.3518	GCF_003751845.1	Pseudomonadota	Enterobacteriaceae	BIGb0383	100.0	32	0	yes
+S1|k141_16119|High-quality|97.51|5.3518	GCA_023023105.1	Pseudomonadota	Enterobacteriaceae	Enterobacter	100.0	32	0	yes
+S1|k141_16119|High-quality|97.51|5.3518	NA				100.0	32	0	no
+S1|k141_16119|High-quality|97.51|5.3518	IMG_3300011696				100.0	31	0	no
+S1|k141_16119|High-quality|97.51|5.3518	GCF_016632365.1	Pseudomonadota	Enterobacteriaceae	Tenebrionibacter	100.0	30	0	yes
+S1|k141_16119|High-quality|97.51|5.3518	GCF_016632365.1	Pseudomonadota	Enterobacteriaceae	Tenebrionibacter	100.0	30	0	yes
+S1|k141_16119|High-quality|97.51|5.3518	NA				100.0	30	0	no
+S1|k141_16119|High-quality|97.51|5.3518	GCF_037053465.1	Pseudomonadota	Enterobacteriaceae	Citrobacter_A	96.97	33	1	yes
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.97	33	1	no
+S1|k141_16119|High-quality|97.51|5.3518	GCF_016632365.1	Pseudomonadota	Enterobacteriaceae	Tenebrionibacter	96.875	32	1	yes
+S1|k141_16119|High-quality|97.51|5.3518	GCF_013927005.1	Pseudomonadota	Enterobacteriaceae	Enterobacter	96.875	32	1	yes
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.875	32	1	no
+S1|k141_16119|High-quality|97.51|5.3518	IMG_3300011205				96.875	32	1	no
+S1|k141_16119|High-quality|97.51|5.3518	IMG_3300011205				96.875	32	1	no
+S1|k141_16119|High-quality|97.51|5.3518	GCF_001006005.1	Pseudomonadota	Enterobacteriaceae	Chania	96.875	32	1	yes
+S1|k141_16119|High-quality|97.51|5.3518	GCA_033977085.1	Pseudomonadota	Enterobacteriaceae	Apirhabdus	96.875	32	1	yes
+S1|k141_16119|High-quality|97.51|5.3518	GCF_020532665.2	Pseudomonadota	Enterobacteriaceae	Lelliottia	96.774	31	1	yes
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.774	31	1	no
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.774	31	1	no
+S1|k141_16119|High-quality|97.51|5.3518	IMG_3300011548				96.774	31	1	no
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.774	31	1	no
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.667	30	1	no
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.667	30	1	no
+S1|k141_16119|High-quality|97.51|5.3518	NA				96.667	30	1	no
+S1|k141_72092|Complete|100.0|12.5269	NA				100.0	32	0	no
+S1|k141_72092|Complete|100.0|12.5269	NA				100.0	32	0	no
+S1|k141_72092|Complete|100.0|12.5269	NA				96.875	32	1	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	36	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	35	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	35	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	34	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	34	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				97.222	36	1	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	30	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	30	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				97.059	34	1	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	30	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	30	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	30	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	NA				100.0	30	0	no
+S1|k141_39769|provirus_433_34273|High-quality|100.0|66.7643	IMG_3300039385				96.667	30	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				100.0	33	0	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				100.0	33	0	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	IMG_3300029100				97.297	37	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				97.222	36	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	IMG_3300029510				97.222	36	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				97.222	36	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				100.0	31	0	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				97.143	35	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				97.059	34	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				100.0	30	0	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				97.059	34	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				96.875	32	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				96.875	32	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				96.774	31	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				96.667	30	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				96.667	30	1	no
+S1|k141_69988|provirus_1_37087|High-quality|95.24|5.3526	NA				96.667	30	1	no
+S2|k141_35808|Complete|100.0|26.6414	GCA_021158865.1	Thermoplasmatota	JdFR-43	JAGGXW01	96.667	30	0	yes
+S2|k141_37253|High-quality|97.01|0.9912	NA				100.0	31	0	no
+S2|k141_37253|High-quality|97.01|0.9912	NA				100.0	31	0	no
+S2|k141_37253|High-quality|97.01|0.9912	GCF_000821305.1	Bacillota	Clostridiaceae	Clostridium_J	96.774	31	1	yes
+S2|k141_37253|High-quality|97.01|0.9912	NA				96.667	30	1	no
+S2|k141_37253|High-quality|97.01|0.9912	NA				96.667	30	1	no
+S2|k141_107025|Medium-quality|51.39|1.4511	IMG_3300029839				96.97	33	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				100.0	37	0	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				100.0	37	0	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				100.0	36	0	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				100.0	36	0	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				100.0	35	0	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				97.297	37	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				97.297	37	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				97.297	37	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				97.222	36	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				97.143	35	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				97.143	35	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				96.875	32	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				96.875	32	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				96.875	32	1	no
+S2|k141_56158|High-quality|99.16|1.4125	NA				96.774	31	1	no
+S2|k141_56158|High-quality|99.16|1.4125	GCF_003259895.1	Bacillota	Halanaerobiaceae	Halanaerobium	96.774	31	1	yes
+S2|k141_56158|High-quality|99.16|1.4125	NA				96.667	30	1	no
+S2|k141_94579|Medium-quality|62.49|10.6079	GCF_000799075.1	Fusobacteriota	Fusobacteriaceae	Cetobacterium_A	100.0	35	0	yes
+S2|k141_94579|Medium-quality|62.49|10.6079	GCF_000799075.1	Fusobacteriota	Fusobacteriaceae	Cetobacterium_A	97.297	37	1	yes
+S2|k141_12696|Complete|100.0|11.1118	NA				96.97	33	1	no
+S2|k141_12696|Complete|100.0|11.1118	IMG_3300000208				96.97	33	1	no
+S2|k141_12696|Complete|100.0|11.1118	NA				96.875	32	1	no
+S2|k141_12696|Complete|100.0|11.1118	GCA_023228985.1	Pseudomonadota	Pseudomonadaceae	Thiopseudomonas	96.667	30	1	yes
+S2|k141_12696|Complete|100.0|11.1118	GCA_023228985.1	Pseudomonadota	Pseudomonadaceae	Thiopseudomonas	96.667	30	1	yes
+S2|k141_81502|Medium-quality|52.17|1.1885	GCF_017874355.1	Bacillota	Filifactoraceae	Acetoanaerobium	97.222	36	1	yes
+S2|k141_81502|Medium-quality|52.17|1.1885	NA				97.143	35	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	NA				97.059	34	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	NA				97.059	34	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	IMG_3300026549				97.059	34	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	GCA_012839895.1	Bacillota	Syntrophobotulaceae	DUML01	97.059	34	1	yes
+S2|k141_81502|Medium-quality|52.17|1.1885	IMG_3300010285				96.875	32	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	IMG_3300010285				96.875	32	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	IMG_3300022146				96.774	31	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	GCA_003862155.1	Bacillota	Lachnospiraceae	Weimeria	96.774	31	1	yes
+S2|k141_81502|Medium-quality|52.17|1.1885	NA				96.667	30	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	GCA_040756735.1	Bacillota	Desulfitibacteraceae	JBFLYC01	96.667	30	1	yes
+S2|k141_81502|Medium-quality|52.17|1.1885	IMG_3300028593				96.667	30	1	no
+S2|k141_81502|Medium-quality|52.17|1.1885	GCF_000797495.1	Bacillota	Lachnospiraceae	Robinsoniella	94.118	34	1	yes
+S2|k141_66087|Medium-quality|80.85|1.1193	GCA_024103005.1	Bacteroidota	Saprospiraceae	Parvibacillus	97.143	35	1	yes
+S2|k141_66087|Medium-quality|80.85|1.1193	GCA_024103005.1	Bacteroidota	Saprospiraceae	Parvibacillus	97.143	35	1	yes
+S2|k141_135900|Complete|100.0|2.8285	IMG_3300033177				100.0	31	0	no
+S2|k141_135900|Complete|100.0|2.8285	GCF_030056655.1	Bacteroidota	Spirosomataceae	Flectobacillus	96.667	30	1	yes
+S2|k141_135900|Complete|100.0|2.8285	GCF_000427405.1	Bacteroidota	Spirosomataceae	Flectobacillus	96.667	30	1	yes
+S2|k141_135900|Complete|100.0|2.8285	IMG_3300051377				96.667	30	1	no
+S2|k141_67772|Medium-quality|51.3|1.3405	IMG_3300033177				100.0	32	0	no
+S2|k141_120710|provirus_35297_60372|Medium-quality|58.53|4.1191	NA				97.059	34	1	no
+S2|k141_120710|provirus_35297_60372|Medium-quality|58.53|4.1191	NA				97.059	34	1	no
+S2|k141_120710|provirus_35297_60372|Medium-quality|58.53|4.1191	GCA_947038155.1	Bacteroidota	Bacteroidaceae	Bacteroides	97.059	34	1	yes
+S2|k141_120710|provirus_35297_60372|Medium-quality|58.53|4.1191	NA				96.97	33	1	no
+S3|k141_75836|Medium-quality|89.28|1.9979	IMG_3300029839				96.97	33	1	no
+S3|k141_96238|Complete|100.0|2.0373	IMG_3300033177				100.0	31	0	no
+S3|k141_96238|Complete|100.0|2.0373	GCF_030056655.1	Bacteroidota	Spirosomataceae	Flectobacillus	96.667	30	1	yes
+S3|k141_96238|Complete|100.0|2.0373	IMG_3300051377				96.667	30	1	no
+S3|k141_96238|Complete|100.0|2.0373	GCF_000427405.1	Bacteroidota	Spirosomataceae	Flectobacillus	96.667	30	1	yes

@@ -1,0 +1,84 @@
+sample	contig	quality	type	genus	phylum	Confidence score	List of methods
+S1	k141_39769|provirus_433_34273	High-quality	provirus	Bacteroides	Bacteroidota	100.0	blast;98.20 RaFAH;96.80 iPHoP-RF;95.70
+W3	k141_41306|provirus_4071_31837	Medium-quality	provirus	Bacteroides	Bacteroidota	100.0	RaFAH;98.30 blast;95.60 iPHoP-RF;80.30
+W3	k141_20621|provirus_11270_38462	Medium-quality	provirus	Bacteroides	Bacteroidota	100.0	RaFAH;98.00 iPHoP-RF;96.40 blast;94.10
+W1	k141_64876	Medium-quality	phage	Bacteroides	Bacteroidota	100.0	RaFAH;99.10 iPHoP-RF;96.10 blast;94.00
+W2	k141_29940|provirus_4720_24121	Medium-quality	provirus	Bacteroides	Bacteroidota	100.0	RaFAH;98.70 blast;95.10 iPHoP-RF;92.10
+W1	k141_85443	Medium-quality	phage	Bacteroides	Bacteroidota	100.0	RaFAH;98.70 iPHoP-RF;97.10 blast;95.30
+W2	k141_8852	Medium-quality	phage	Bacteroides	Bacteroidota	100.0	RaFAH;98.00 iPHoP-RF;96.70 blast;94.10
+W2	k141_3134|provirus_22384_65174	High-quality	provirus	Bacteroides	Bacteroidota	100.0	RaFAH;98.40 iPHoP-RF;96.70 blast;93.20
+W1	k141_14364	High-quality	phage	Bacteroides	Bacteroidota	99.9	iPHoP-RF;97.10 RaFAH;96.00 blast;94.50
+W3	k141_7277	Medium-quality	phage	Bacteroides	Bacteroidota	99.7	blast;98.30 iPHoP-RF;96.70 RaFAH;90.10
+S3	k141_56693|provirus_9150_42966	Medium-quality	provirus	Escherichia	Proteobacteria	99.6	RaFAH;97.20 blast;92.40 iPHoP-RF;54.60
+W3	k141_3420	Medium-quality	phage	Bacteroides	Bacteroidota	99.4	iPHoP-RF;96.40 blast;96.30 RaFAH;93.50
+W3	k141_19239	Medium-quality	phage	Salmonella	Proteobacteria	98.8	blast;96.10 iPHoP-RF;90.10 RaFAH;88.40
+W3	k141_52071	Medium-quality	phage	Escherichia	Proteobacteria	98.8	blast;96.60 iPHoP-RF;92.80 RaFAH;86.50
+S3	k141_116966	Medium-quality	phage	Bacteroides	Bacteroidota	98.4	RaFAH;97.30 iPHoP-RF;78.70
+S2	k141_105237	High-quality	phage	Clostridium	Firmicutes_A	98.4	blast;94.80 iPHoP-RF;92.40 RaFAH;88.90
+S3	k141_92144	High-quality	phage	Clostridium	Firmicutes_A	98.4	blast;94.80 iPHoP-RF;92.40 RaFAH;88.90
+S2	k141_120384	Medium-quality	phage	Bacteroides	Bacteroidota	98.2	RaFAH;97.30 iPHoP-RF;75.00
+S1	k141_16119	High-quality	phage	Escherichia	Proteobacteria	98.2	blast;96.10 RaFAH;83.00 iPHoP-RF;78.50
+S3	k141_20826	Medium-quality	phage	Fusobacterium	Fusobacteriota	97.9	RaFAH;98.50
+S2	k141_73356	High-quality	phage	Fusobacterium	Fusobacteriota	97.6	RaFAH;98.30
+W2	k141_9843	High-quality	phage	Aeromonas	Proteobacteria	97.2	blast;96.70 iPHoP-RF;96.40 RaFAH;69.90
+S2	k141_135900	Complete	phage	Albibacterium	Bacteroidota	97.0	blast;97.90
+S3	k141_96238	Complete	phage	Albibacterium	Bacteroidota	97.0	blast;97.90 iPHoP-RF;50.20
+W3	k141_54171	Medium-quality	phage	Escherichia	Proteobacteria	96.0	iPHoP-RF;93.10 blast;91.90 RaFAH;79.60
+S2	k141_117171	Medium-quality	phage	Escherichia	Proteobacteria	95.9	iPHoP-RF;97.10
+S3	k141_100088	Medium-quality	phage	Yersinia	Proteobacteria	95.9	iPHoP-RF;97.10
+W1	k141_69425|provirus_28378_55342	High-quality	provirus	Hafnia	Proteobacteria	95.9	iPHoP-RF;97.10 blast;96.00
+W1	k141_61237	Medium-quality	phage	Shewanella	Proteobacteria	95.9	iPHoP-RF;97.10 blast;96.60 CRISPR;80.20
+W1	k141_93811	Medium-quality	phage	Bacteroides	Bacteroidota	95.7	blast;94.90 iPHoP-RF;84.50 RaFAH;70.50
+S3	k141_14795	Medium-quality	phage	Vibrio	Proteobacteria	95.7	RaFAH;97.00
+S1	k141_69356	High-quality	phage	Salmonella	Proteobacteria	95.6	blast;96.90 iPHoP-RF;68.00
+W3	k141_10724|provirus_1_26383	Medium-quality	provirus	Aeromonas	Proteobacteria	95.6	blast;95.40 iPHoP-RF;93.10 RaFAH;65.80 CRISPR;54.10
+S2	k141_28761	Complete	phage	Romboutsia	Firmicutes_A	95.3	iPHoP-RF;96.70 CRISPR;70.20
+S3	k141_50768	Complete	phage	Romboutsia	Firmicutes_A	95.3	iPHoP-RF;96.70 CRISPR;70.20
+S2	k141_68187|provirus_1_25544	Medium-quality	provirus	Bacteroides	Bacteroidota	95.3	RaFAH;96.70
+S3	k141_70785	Medium-quality	phage	Bacteroides	Bacteroidota	95.2	RaFAH;89.90 iPHoP-RF;83.30
+W3	k141_42567|provirus_13320_55314	Medium-quality	provirus	Escherichia	Proteobacteria	95.0	blast;96.50 iPHoP-RF;68.20
+W2	k141_15056|provirus_298_60670	High-quality	provirus	Aeromonas	Proteobacteria	95.0	blast;96.50 iPHoP-RF;89.50 CRISPR;63.10
+W2	k141_23257	Medium-quality	phage	Aeromonas	Proteobacteria	95.0	blast;96.50 iPHoP-RF;92.80 CRISPR;68.20
+W3	k141_35738	Medium-quality	phage	SYFN01	Proteobacteria	94.7	blast;96.30
+W1	k141_27977|provirus_15669_72479	Medium-quality	provirus	Aeromonas	Proteobacteria	94.7	blast;96.30 CRISPR;95.70 iPHoP-RF;94.40
+W1	k141_93866|provirus_15575_37595	Medium-quality	provirus	Aeromonas	Proteobacteria	94.6	blast;96.20 iPHoP-RF;95.40
+S2	k141_135904	Complete	phage	GCA-900066495	Firmicutes_A	94.5	iPHoP-RF;96.10
+W1	k141_16129	Medium-quality	phage	Pseudescherichia	Proteobacteria	94.2	blast;95.90
+S2	k141_24680|provirus_132565_174295	High-quality	provirus	Niameybacter	Firmicutes_A	94.0	blast;95.80 iPHoP-RF;57.90
+S3	k141_2024|provirus_9978_51708	High-quality	provirus	Niameybacter	Firmicutes_A	94.0	blast;95.80 iPHoP-RF;57.90
+S3	k141_6160	Medium-quality	phage	Niameybacter	Firmicutes_A	93.9	blast;95.70 iPHoP-RF;75.00
+W3	k141_2253|provirus_2_24083	Medium-quality	provirus	Chania	Proteobacteria	93.9	iPHoP-RF;95.70
+S3	k141_120077	Complete	phage	Clostridium	Firmicutes_A	93.8	blast;93.80 iPHoP-RF;86.00 RaFAH;64.70
+S2	k141_56158	High-quality	phage	Clostridium	Firmicutes_A	93.8	blast;93.80 iPHoP-RF;82.80 RaFAH;64.70
+S3	k141_61207	Medium-quality	phage	Plesiomonas	Proteobacteria	93.8	blast;95.60 iPHoP-RF;78.00
+W3	k141_56059|provirus_446696_471318	Medium-quality	provirus	Escherichia	Proteobacteria	93.5	RaFAH;95.40
+S3	k141_120081	Complete	phage	GCA-900066495	Firmicutes_A	93.5	iPHoP-RF;95.40
+S2	k141_90502	Medium-quality	phage	Plesiomonas	Proteobacteria	93.5	blast;95.40 iPHoP-RF;58.40
+S2	k141_135505	High-quality	phage	Mycobacterium	Actinobacteriota	93.5	iPHoP-RF;95.40
+S1	k141_3098	Medium-quality	phage	Bilophila	Desulfobacterota	93.4	blast;95.30 iPHoP-RF;70.90
+W3	k141_46776|provirus_185580_224273	High-quality	provirus	Bacteroides	Bacteroidota	93.4	RaFAH;92.60 iPHoP-RF;68.40
+W3	k141_54772|provirus_43316_73938	Medium-quality	provirus	Edwardsiella	Proteobacteria	93.2	blast;95.20 iPHoP-RF;65.10
+W3	k141_39913|provirus_102971_133780	High-quality	provirus	Edwardsiella	Proteobacteria	93.1	blast;95.10 iPHoP-RF;61.40
+S1	k141_69988|provirus_1_37087	High-quality	provirus	Roseburia	Firmicutes_A	93.1	iPHoP-RF;95.10 blast;89.20
+S2	k141_61967	Medium-quality	phage	Plesiomonas	Proteobacteria	93.0	blast;95.00 iPHoP-RF;64.30
+S1	k141_39871	Medium-quality	phage	Pygmaiobacter	Firmicutes_A	93.0	blast;95.00 iPHoP-RF;50.40
+W3	k141_13470	High-quality	phage	Escherichia	Proteobacteria	92.9	iPHoP-RF;92.40 RaFAH;66.60 CRISPR;63.90
+W1	k141_46762	Medium-quality	phage	Aeromonas	Proteobacteria	92.7	blast;94.80 iPHoP-RF;90.10
+S2	k141_47228	Complete	phage		Thermoproteota	92.2	iPHoP-RF;94.40
+W2	k141_5642	Medium-quality	phage	Aeromonas	Proteobacteria	92.1	blast;93.00 RaFAH;59.00 iPHoP-RF;55.20
+W1	k141_31848	Medium-quality	phage	Aeromonas	Proteobacteria	92.0	blast;94.20
+W3	k141_38021	Medium-quality	phage	Plesiomonas	Proteobacteria	91.8	blast;94.10 iPHoP-RF;69.50
+S2	k141_54107	High-quality	phage	Clostridium	Firmicutes_A	91.6	blast;93.90 iPHoP-RF;84.20
+S2	k141_70410	High-quality	phage	UBA12018	Bacteroidota	91.6	blast;93.90 iPHoP-RF;65.30
+S2	k141_27149	Medium-quality	phage	Bacteroides	Bacteroidota	91.6	RaFAH;90.40 iPHoP-RF;68.40
+S3	k141_74935	Medium-quality	phage	Niameybacter	Firmicutes_A	91.2	blast;93.60 iPHoP-RF;79.50
+S2	k141_135903	Medium-quality	phage	Vibrio	Proteobacteria	91.2	RaFAH;93.60
+S3	k141_54223	Medium-quality	phage	Vibrio	Proteobacteria	91.2	RaFAH;93.60
+S2	k141_87114	Medium-quality	phage	Pectobacterium	Proteobacteria	91.0	iPHoP-RF;93.40
+S2	k141_76676	Medium-quality	phage	Methylobacter_A	Proteobacteria	90.8	blast;93.20 iPHoP-RF;84.20
+S3	k141_89795	Complete	phage	Staphylococcus	Firmicutes	90.7	iPHoP-RF;93.10
+S3	k141_79290	Complete	phage	Escherichia	Proteobacteria	90.7	iPHoP-RF;93.10
+S1	k141_46735	Medium-quality	phage	Citrobacter	Proteobacteria	90.3	iPHoP-RF;92.80
+S3	k141_95487	Medium-quality	phage	Bacteroides	Bacteroidota	90.2	RaFAH;89.60 iPHoP-RF;65.10
+W1	k141_26133	Medium-quality	phage	Citrobacter	Proteobacteria	90.2	blast;92.70 iPHoP-RF;78.70
+W1	k141_87676	Medium-quality	phage	Escherichia_C	Proteobacteria	90.0	blast;92.50 iPHoP-RF;85.70

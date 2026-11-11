@@ -1,0 +1,4 @@
+comparison	queries	hits	hit_rate_pct	rate_95ci_upper_pct
+real reads x RVDBv32 (baseline)	4000000	30176	0.7544	
+shuffled reads x RVDBv32 (null 1)	4000000	0	0.0000	0.000075
+real reads x reversed RVDB (null 2)	4000000	0	0.0000	0.000075
