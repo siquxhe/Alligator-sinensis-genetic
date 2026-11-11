@@ -13,9 +13,11 @@
 /04_viral/
 /05_mag/
 /06_crispr/
-/07_mag/
 /07_network/
 /metadata/
+# 注：/07_mag/ 不排除 —— 其中仅有 108K 结果表（mag_final.tsv、host_validation.tsv 等），
+#     A 的 Fig 5（iPHoP 5 例验证）依赖该目录，必须入库以保证可复现。
+#     其二进制产物（*.fna、*.bam）由下方全局规则过滤。
 
 # ---------- 外部工具链（2.1 G，可重新安装）----------
 /workflow/tools/

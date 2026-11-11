@@ -1,0 +1,20 @@
+mag	sample_id	contig	size_kb	checkv_quality	checkv_completeness	mag_phylum	mag_genus	mag_completeness	mag_contamination	mag_quality	iphop_genus	iphop_phylum	iphop_confidence	iphop_methods	phylum_agree	genus_agree	has_iphop
+S2.bin.26	S2	k141_24680	41.7	High-quality	100.0	Bacillota	Holtiella	96.64	2.68	Near-complete	Niameybacter	Firmicutes_A	94.0	blast;95.80 iPHoP-RF;57.90	True	False	True
+W2.bin.5	W2	k141_3134	42.8	High-quality	95.1	Bacteroidota	Bacteroides	98.22	0.45	Near-complete	Bacteroides	Bacteroidota	100.0	RaFAH;98.40 iPHoP-RF;96.70 blast;93.20	True	True	True
+W3.bin.13	W3	k141_42567	42.0	Medium-quality	89.53	Pseudomonadota	Citrobacter	88.49	8.46	High	Escherichia	Proteobacteria	95.0	blast;96.50 iPHoP-RF;68.20	True	False	True
+W3.bin.17	W3	k141_10724	26.4	Medium-quality	69.0	Pseudomonadota	Aeromonas	97.84	0.99	Near-complete	Aeromonas	Proteobacteria	95.6	blast;95.40 iPHoP-RF;93.10 RaFAH;65.80 CRISPR;54.10	True	True	True
+W3.bin.19	W3	k141_46776	38.7	High-quality	91.19	Bacteroidota	Culturomica	97.31	0.0	Near-complete	Bacteroides	Bacteroidota	93.4	RaFAH;92.60 iPHoP-RF;68.40	True	False	True
+S1.bin.22	S1	k141_45736	16.4	Low-quality	1.18	Pseudomonadota	Morganella	91.42	3.26	Near-complete					False	False	False
+S1.bin.27	S1	k141_18919	12.2	Low-quality	30.81	Desulfobacterota_I	Nitratidesulfovibrio	96.45	0.0	Near-complete					False	False	False
+S1.bin.27	S1	k141_64024	10.7	Low-quality	12.64	Desulfobacterota_I	Nitratidesulfovibrio	96.45	0.0	Near-complete					False	False	False
+S1.bin.32	S1	k141_37668	13.0	Low-quality	16.04	Bacillota	Anaerotruncus	95.97	1.34	Near-complete					False	False	False
+S1.bin.7	S1	k141_27769	14.7	Low-quality	13.62	Bacillota	Anaerotruncus	96.04	1.01	Near-complete					False	False	False
+S2.bin.26	S2	k141_7202	33.4	Medium-quality	70.65	Bacillota	Holtiella	96.64	2.68	Near-complete					False	False	False
+S2.bin.26	S2	k141_96024	18.0	Low-quality	9.68	Bacillota	Holtiella	96.64	2.68	Near-complete					False	False	False
+W2.bin.7	W2	k141_33953	41.0	Medium-quality	63.93	Bacillota	Robinsoniella	99.37	0.32	Near-complete					False	False	False
+W2.bin.7	W2	k141_30116	27.5	Medium-quality	52.83	Bacillota	Robinsoniella	99.37	0.32	Near-complete					False	False	False
+W3.bin.13	W3	k141_34300	15.0	Low-quality	37.51	Pseudomonadota	Citrobacter	88.49	8.46	High					False	False	False
+W3.bin.13	W3	k141_14325	14.5	Low-quality	33.55	Pseudomonadota	Citrobacter	88.49	8.46	High					False	False	False
+W3.bin.17	W3	k141_1004	12.9	Low-quality	27.2	Pseudomonadota	Aeromonas	97.84	0.99	Near-complete					False	False	False
+W3.bin.19	W3	k141_11998	22.4	Medium-quality	62.8	Bacteroidota	Culturomica	97.31	0.0	Near-complete					False	False	False
+W3.bin.2	W3	k141_16815	43.7	High-quality	94.3	Bacteroidota	UBA12018	97.81	0.55	Near-complete					False	False	False
