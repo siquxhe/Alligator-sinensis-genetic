@@ -41,6 +41,7 @@ MARKERS = ["o", "s", "^", "D", "v", "P"]
 LABELS = {
     "C1": "C1\nstrict\ncategories",
     "C2": "C2\nbroad\n(all hits)",
+    "C6": "C6\nbroad, host\nincluded",
     "C3": "C3\nliterature\nreported",
     "C4": "C4\ncontig\ncounts",
     "C5": "C5\nvOTU\nreference",
@@ -77,13 +78,14 @@ def main() -> None:
         1, 2, figsize=(7.2, 3.4), gridspec_kw={"width_ratios": [1.55, 1]}
     )
 
-    codes = ["C1", "C2", "C3", "C4", "C5"]
+    codes = ["C1", "C2", "C6", "C3", "C4", "C5"]
     xpos = np.arange(len(codes))
 
     # ---------------- Panel A
-    # C3 文献区间
-    ax1.axhspan(C3_LOW, C3_HIGH, xmin=0.492, xmax=0.584, color="0.88", zorder=0, linewidth=0)
-    ax1.text(2, C3_HIGH * 1.35, "reported range\n0.04–4.03%", ha="center", va="bottom", fontsize=6, color="0.35")
+    # C3 文献区间（数据坐标，避免 set_xlim 改变后错位）
+    j3 = codes.index("C3")
+    ax1.fill_betweenx([C3_LOW, C3_HIGH], j3 - 0.42, j3 + 0.42, color="0.88", zorder=0, linewidth=0)
+    ax1.text(j3, C3_HIGH * 1.35, "reported range\n0.04–4.03%", ha="center", va="bottom", fontsize=6, color="0.35")
 
     for i, s in enumerate(SAMPLES):
         xs, ys = [], []
@@ -115,7 +117,7 @@ def main() -> None:
     ax1.set_xticks(xpos)
     ax1.set_xticklabels([LABELS[c] for c in codes], fontsize=6.5)
     ax1.set_ylabel("Viral fraction of reads (%)")
-    ax1.set_title("A  Five definitions, one dataset", loc="left", fontweight="bold")
+    ax1.set_title("A  Six definitions, one dataset", loc="left", fontweight="bold")
     ax1.legend(
         title="Sample", title_fontsize=6.5, fontsize=6.5, frameon=False,
         loc="upper left", ncol=3, handletextpad=0.3, columnspacing=0.8,
@@ -135,12 +137,22 @@ def main() -> None:
         -0.66, 1.15, "171×\noverall", color="#D55E00", fontsize=8.0, fontweight="bold",
         rotation=90, ha="center", va="center", linespacing=1.2,
     )
-    ax1.set_xlim(-0.85, 4.45)
+    ax1.set_xlim(-0.85, 5.45)
+
+    # C2 ≈ C6 标注（同一分子，分母是否含宿主）
+    j2, j6 = codes.index("C2"), codes.index("C6")
+    ax1.annotate(
+        "", xy=(j2, 1.02), xytext=(j6, 1.02),
+        arrowprops=dict(arrowstyle="<->", color="0.35", linewidth=0.7,
+                        shrinkA=6, shrinkB=6),
+    )
+    ax1.text((j2 + j6) / 2, 1.10, "Δ ≤ 1.2%", ha="center", va="bottom",
+             fontsize=6, color="0.3", style="italic")
 
     # ---------------- Panel B：相邻口径放大倍数
     ratios = []
     names = []
-    for a, b in [("C1", "C2"), ("C2", "C5"), ("C2", "C4")]:
+    for a, b in [("C1", "C2"), ("C2", "C5"), ("C2", "C4"), ("C6", "C2")]:
         ra = [float(t.loc[b, s]) / float(t.loc[a, s]) for s in SAMPLES]
         ratios.append(ra)
         names.append(f"{b}/{a}")
@@ -151,7 +163,7 @@ def main() -> None:
         flierprops=dict(marker="o", markersize=3, markerfacecolor="none", markeredgecolor="0.4", linewidth=0.5),
         whiskerprops=dict(linewidth=0.7), capprops=dict(linewidth=0.7),
     )
-    for patch, c in zip(bp["boxes"], ["#56B4E9", "#009E73", "#CC79A7"]):
+    for patch, c in zip(bp["boxes"], ["#56B4E9", "#009E73", "#CC79A7", "#999999"]):
         patch.set_facecolor(c)
         patch.set_alpha(0.55)
         patch.set_edgecolor("0.3")
@@ -163,9 +175,13 @@ def main() -> None:
 
     ax2.axhline(1, color="0.5", linewidth=0.7, linestyle="--", zorder=1)
     ax2.set_yscale("log")
-    ax2.set_ylim(0.8, 70)
-    ax2.set_xticks([1, 2, 3])
-    ax2.set_xticklabels(["category filter\nC2 / C1", "reference space\nC5 / C2", "statistical unit\nC4 / C2"], fontsize=6.0)
+    ax2.set_ylim(0.72, 80)
+    ax2.set_xticks([1, 2, 3, 4])
+    ax2.set_xticklabels(
+        ["category filter\nC2 / C1", "reference space\nC5 / C2",
+         "statistical unit\nC4 / C2", "denominator\nC2 / C6"],
+        fontsize=5.6,
+    )
     ax2.set_ylabel("Fold change")
     ax2.set_title("B  What drives the gap", loc="left", fontweight="bold")
     ax2.grid(axis="y", color="0.9", linewidth=0.5, zorder=0)
@@ -173,7 +189,7 @@ def main() -> None:
 
     # 倍数标注：统一放在箱体上方，避免飘到画布边缘
     for i, ra in enumerate(ratios, start=1):
-        ax2.text(i, 42, f"{np.median(ra):.1f}×", ha="center", va="center", fontsize=7.5, color="0.15", fontweight="bold")
+        ax2.text(i, 52, f"{np.median(ra):.1f}×", ha="center", va="center", fontsize=7.0, color="0.15", fontweight="bold")
 
     fig.tight_layout(pad=0.6)
     fig.savefig(OUT / "Fig2_five_denominators.pdf", bbox_inches="tight")

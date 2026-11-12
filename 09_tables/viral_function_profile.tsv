@@ -1,4 +1,4 @@
-run_accession	total_hits	Structural / virion	Replication / transcription	Metabolic / housekeeping	Hypothetical / uncharacterized	Other annotated	viral_specific_pct
+run_accession	total_hits	Structural / virion	Replication / transcription	Metabolic / housekeeping	Hypothetical / uncharacterized	Other annotated	strict_share_of_hits_pct
 SRR14300938	260629	2.1	12.6	45.9	13.7	25.8	14.6
 SRR14300939	282157	0.3	12.9	50.9	14.6	21.4	13.2
 SRR14300942	330656	1.1	12.5	49.3	15.5	21.6	13.5

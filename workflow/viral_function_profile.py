@@ -105,7 +105,7 @@ for run in RUNS:
     for cat in CATS:
         row[cat] = f"{c.get(cat, 0)/tot*100:.1f}"
     vir = (c.get("Structural / virion", 0) + c.get("Replication / transcription", 0))
-    row["viral_specific_pct"] = f"{vir/tot*100:.1f}"
+    row["strict_share_of_hits_pct"] = f"{vir/tot*100:.1f}"
     rows.append(row)
 
 # 合并行
@@ -115,11 +115,11 @@ for cat in CATS:
     merged[cat] = f"{sum(per_sample[r].get(cat,0) for r in RUNS)/tot_all*100:.1f}"
 vir_all = sum(per_sample[r].get("Structural / virion", 0) +
               per_sample[r].get("Replication / transcription", 0) for r in RUNS)
-merged["viral_specific_pct"] = f"{vir_all/tot_all*100:.1f}"
+merged["strict_share_of_hits_pct"] = f"{vir_all/tot_all*100:.1f}"
 merged["total_hits"] = tot_all
 rows.append(merged)
 
-fields = ["run_accession", "total_hits"] + CATS + ["viral_specific_pct"]
+fields = ["run_accession", "total_hits"] + CATS + ["strict_share_of_hits_pct"]
 with open(TAB / "viral_function_profile.tsv", "w", newline="", encoding="utf-8") as fh:
     w = csv.DictWriter(fh, fieldnames=fields, delimiter="\t")
     w.writeheader()
@@ -132,7 +132,7 @@ for r in rows:
           f"{r['Replication / transcription']:>8}"
           f"{r['Metabolic / housekeeping']:>8}"
           f"{r['Hypothetical / uncharacterized']:>8}"
-          f"{r['Other annotated']:>8}{r['viral_specific_pct']:>8}")
+          f"{r['Other annotated']:>8}{r['strict_share_of_hits_pct']:>8}")
 
 print("\n=== 结构/复制类命中主要指向哪些物种 ===")
 for cat, cnt in cat_species.items():
