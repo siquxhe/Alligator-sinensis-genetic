@@ -2,7 +2,7 @@
 Description=iPHoP database download watcher (hourly poll, then verify/extract/predict)
 After=network-online.target mnt-disk2t.mount
 Wants=network-online.target
-RequiresMountsFor=/mnt/disk2t
+RequiresMountsFor=/mnt/work
 StartLimitIntervalSec=0
 
 [Service]

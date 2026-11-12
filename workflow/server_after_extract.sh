@@ -3,7 +3,7 @@
 # 由 systemd 在旧守候进程退出后拉起
 set -uo pipefail
 
-BASE=/mnt/disk2t/iphop_db
+BASE=/mnt/work/iphop_db
 LOG=$BASE/watch.log
 log() { echo "[$(date '+%F %T')] $*" >> "$LOG"; }
 

@@ -4,7 +4,7 @@
 # 且用 iphop12 环境（iPHoP 1.2.0，匹配非 rw 库；1.4.x 会因缺 rewish_models 直接退出）
 set -uo pipefail
 
-BASE=/mnt/disk2t/iphop_db
+BASE=/mnt/work/iphop_db
 XD=$BASE/extract
 LOG=$BASE/watch.log
 IPHOP=$HOME/biotools/envs/iphop12/bin/iphop

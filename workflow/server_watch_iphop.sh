@@ -4,7 +4,7 @@
 # 下载中断（进程消失）会自动幂等续传，最多 6 次
 set -uo pipefail
 
-BASE=/mnt/disk2t/iphop_db
+BASE=/mnt/work/iphop_db
 TAR=$BASE/iPHoP.latest.tar.gz
 PARTS=$TAR.parts
 DLLOG=$BASE/dl.log
@@ -104,7 +104,7 @@ if [ "$RC" -ne 0 ]; then
   exit 1
 fi
 log "解压完成，用时 $(( ($(date +%s) - T0) / 60 )) 分钟"
-df -h /mnt/disk2t | tail -1 | sed 's/^/  磁盘: /' >> "$LOG"
+df -h /mnt/work | tail -1 | sed 's/^/  磁盘: /' >> "$LOG"
 
 # ---------------- 阶段四：定位数据库 ----------------
 DBROOT=$(find "$XD" -maxdepth 4 -type d -name 'iPHoP_db' 2>/dev/null | head -1)

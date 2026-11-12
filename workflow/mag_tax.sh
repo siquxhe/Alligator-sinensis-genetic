@@ -6,7 +6,7 @@ B="$HOME/virome"
 E="$HOME/biotools/envs/virome/bin"
 export PATH="$E:$PATH"
 MAGS="$B/07_mag/mag_final"
-DB="/mnt/disk2t/iphop_db/extract/Sept_2021_pub/db/Host_Genomes/Host_Genomes"   # 完整宿主基因组库（74 GB，iPHoP 全库）
+DB="/mnt/work/iphop_db/db/Host_Genomes/Host_Genomes"   # 完整宿主基因组库（74 GB，iPHoP 全库）
 W="$B/work/mag_tax"
 NTOP=${1:-3}          # 每个 MAG 取最长的几条 contig
 
