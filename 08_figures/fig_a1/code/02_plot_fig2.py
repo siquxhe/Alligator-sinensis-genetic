@@ -39,10 +39,10 @@ COLORS = ["#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00"]
 MARKERS = ["o", "s", "^", "D", "v", "P"]
 
 LABELS = {
-    "C1": "C1\nfunctional\nevidence",
-    "C2": "C2\nstructural\nincluded",
+    "C1": "C1\nstrict\ncategories",
+    "C2": "C2\nbroad\n(all hits)",
     "C3": "C3\nliterature\nreported",
-    "C4": "C4\ncontig\npresence",
+    "C4": "C4\ncontig\ncounts",
     "C5": "C5\nvOTU\nreference",
 }
 
@@ -82,7 +82,7 @@ def main() -> None:
 
     # ---------------- Panel A
     # C3 文献区间
-    ax1.axhspan(C3_LOW, C3_HIGH, xmin=0.34, xmax=0.58, color="0.85", zorder=0, linewidth=0)
+    ax1.axhspan(C3_LOW, C3_HIGH, xmin=0.492, xmax=0.584, color="0.88", zorder=0, linewidth=0)
     ax1.text(2, C3_HIGH * 1.35, "reported range\n0.04–4.03%", ha="center", va="bottom", fontsize=6, color="0.35")
 
     for i, s in enumerate(SAMPLES):
@@ -115,7 +115,7 @@ def main() -> None:
     ax1.set_xticks(xpos)
     ax1.set_xticklabels([LABELS[c] for c in codes], fontsize=6.5)
     ax1.set_ylabel("Viral fraction of reads (%)")
-    ax1.set_title("A  Five denominators, one dataset", loc="left", fontweight="bold")
+    ax1.set_title("A  Five definitions, one dataset", loc="left", fontweight="bold")
     ax1.legend(
         title="Sample", title_fontsize=6.5, fontsize=6.5, frameon=False,
         loc="upper left", ncol=3, handletextpad=0.3, columnspacing=0.8,
@@ -130,11 +130,12 @@ def main() -> None:
         xytext=(-0.42, 15.23),
         arrowprops=dict(arrowstyle="<->", color="#D55E00", linewidth=0.9, shrinkA=0, shrinkB=0),
     )
+    # 171× 为"全口径 × 全样本"的 min–max 跨度，非同一样本内的比较（见 figA1_log）
     ax1.text(
-        -0.62, 1.15, "171×", color="#D55E00", fontsize=9, fontweight="bold",
-        rotation=90, ha="center", va="center",
+        -0.66, 1.15, "171×\noverall", color="#D55E00", fontsize=8.0, fontweight="bold",
+        rotation=90, ha="center", va="center", linespacing=1.2,
     )
-    ax1.set_xlim(-0.75, 4.45)
+    ax1.set_xlim(-0.85, 4.45)
 
     # ---------------- Panel B：相邻口径放大倍数
     ratios = []
@@ -164,7 +165,7 @@ def main() -> None:
     ax2.set_yscale("log")
     ax2.set_ylim(0.8, 70)
     ax2.set_xticks([1, 2, 3])
-    ax2.set_xticklabels(["strictness\nC2 / C1", "reference\nC5 / C2", "unit\nC4 / C2"], fontsize=6.5)
+    ax2.set_xticklabels(["category filter\nC2 / C1", "reference space\nC5 / C2", "statistical unit\nC4 / C2"], fontsize=6.0)
     ax2.set_ylabel("Fold change")
     ax2.set_title("B  What drives the gap", loc="left", fontweight="bold")
     ax2.grid(axis="y", color="0.9", linewidth=0.5, zorder=0)

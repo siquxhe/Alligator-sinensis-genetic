@@ -9,17 +9,22 @@
 
 五个口径
 --------
-C1  ORF 命中 / 全部 reads        参考空间=nr 库      赋值=计数
-C2  ORF 命中 / 非宿主 reads      参考空间=nr 库      赋值=计数（分母扣宿主）
-C3  原文报告值                   参考空间=nr+MEGAN4  赋值=LCA 归属（文献值，非本批重算）
-C4  病毒 contig / 全部 contig    参考空间=geNomad    赋值=有无
-C5  vOTU 比对 reads / 全部 reads 参考空间=本批 vOTU  赋值=计数
+C1  structural + replication/transcription hits / all clean reads
+    reference = RVDB-prot v32 Unique       assignment = category filter
+C2  all viral-like hits / all clean reads
+    reference = RVDB-prot v32 Unique       assignment = no category filter
+C3  literature value
+    reference = nr + MEGAN4 LCA (Tang 2019)  assignment = LCA（文献值，非本批重算）
+C4  viral contigs / all contigs
+    reference = geNomad                    assignment = contig count
+C5  vOTU-mapped reads / all clean reads
+    reference = this study's 9,980 vOTUs   assignment = read count
 
 差异来源
 --------
-C1 vs C2  → 分母是否扣除宿主
-C1 vs C5  → 参考空间（nr 库 vs 本批 9,980 vOTU）
-C4 vs 其余 → 统计单元（contig 有无 vs reads 计数）
+C1 vs C2  → 类别筛选（是否排除代谢/持家、其他已注释、未知功能）
+C2 vs C5  → 参考空间（RVDB-prot v32 Unique vs 本批 9,980 vOTU）
+C2 vs C4  → 统计单元（reads 计数 vs contig 计数）
 
 输入 raw_data/
 --------------
@@ -85,7 +90,9 @@ def main() -> None:
         on="sample_id",
         how="left",
     )
-    df["nonhost_reads"] = df["reads_total"] * (1 - df["host_aligned_pct"] / 100)
+    # 注：nonhost_reads 曾用于"去宿主分母"口径，最终未纳入 canonical 五口径；
+    # 若将来增加 C6（非宿主分母），在此恢复计算。
+    _ = df["reads_total"] * (1 - df["host_aligned_pct"] / 100)  # reserved for C6
     df["C1_pct"] = df["viral_specific_pct"]   # 严格：需功能蛋白证据
     df["C2_pct"] = df["viral_like_pct"]       # 宽：含仅结构蛋白命中
 
@@ -126,23 +133,23 @@ def main() -> None:
 
     add(
         "C1",
-        "严格：需功能蛋白证据",
-        "含功能注释的病毒 ORF 命中 reads",
+        "严格：仅结构 + 复制/转录",
+        "结构 + 复制/转录类别的病毒命中 reads",
         "全部 clean reads",
-        "nr 库",
-        "双证据",
+        "RVDB-prot v32 Unique",
+        "类别筛选",
         {s: round(float(df.loc[df.sample_id == s, "C1_pct"].iloc[0]), 4) for s in SAMPLES},
-        "扣除仅命中结构蛋白的 reads",
+        "排除代谢/持家、其他已注释、未知功能三类",
     )
     add(
         "C2",
-        "宽：含仅结构蛋白命中",
-        "全部病毒样 ORF 命中 reads",
+        "宽：全部病毒样命中",
+        "全部病毒样命中 reads",
         "全部 clean reads",
-        "nr 库",
-        "计数",
+        "RVDB-prot v32 Unique",
+        "不筛选",
         {s: round(float(df.loc[df.sample_id == s, "C2_pct"].iloc[0]), 4) for s in SAMPLES},
-        "不做功能证据过滤",
+        "不排除代谢/持家/未知类别",
     )
     add(
         "C3",
@@ -160,7 +167,7 @@ def main() -> None:
         "病毒 contig 数",
         "全部 contig 数",
         "geNomad 判定",
-        "有无",
+        "计数",
         {s: round(float(df.loc[df.sample_id == s, "C4_pct"].iloc[0]), 4) for s in SAMPLES},
         "统计单元为 contig，非 reads",
     )
@@ -202,7 +209,7 @@ def main() -> None:
                 v = r[s]
                 cells.append("—" if pd.isna(v) else f"{v:.4g}")
             fh.write(f"| **{r['口径']}** | {r['定义']} | " + " | ".join(cells) + f" | {r['范围(最小-最大)']} |\n")
-        fh.write("\n**差异来源**：C1↔C2 差在赋值严格性（是否要求功能蛋白证据）；C2↔C5 差在参考空间（nr 库 vs 本批 vOTU）；C4 与其余差在统计单元（contig 有无 vs reads 计数）。\n")
+        fh.write("\n**差异来源**：C1↔C2 差在类别筛选（是否排除代谢/持家、其他已注释、未知功能）；C2↔C5 差在参考空间（RVDB vs 本批 vOTU）；C2↔C4 差在统计单元（reads 计数 vs contig 计数）。\n")
         fh.write("\n**C3 说明**：原文数值不可在本批数据上重算（无原始 ORF 比对输出），故以文献报告区间呈现，不作为可比数值。\n")
 
     # ---------------- 控制台诊断

@@ -49,7 +49,7 @@ DIMS = [
     {
         "name": "Reference space",
         "sub": "what you compare against",
-        "options": ["Public nr", "Local vOTUs", "Contig set"],
+        "options": ["RVDB-prot", "Local vOTUs", "Contig set"],
         "fold": "5.6×",
         "note": "local DB recovers\nmore viral reads",
         "color": BLUE,
