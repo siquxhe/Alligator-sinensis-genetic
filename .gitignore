@@ -104,3 +104,9 @@ desktop.ini
 
 # ---------- WorkBuddy 工作记录 ----------
 .workbuddy/
+
+# 第二数据集原始下载
+/12_second_dataset/raw/*.xlsx
+/12_second_dataset/raw/*.json
+/12_second_dataset/raw/*.sra
+/12_second_dataset/raw/*.fastq.gz
