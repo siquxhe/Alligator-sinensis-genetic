@@ -49,6 +49,11 @@ NOTES = [
      "exceeded 60% identity; none was an acquired resistance gene."),
     ("Items 1–8 complement MIUViG (Roux et al., Nat Biotechnol 2019, doi:10.1038/nbt.4306), "
      "which specifies reporting of uncultivated viral genomes rather than read-level fractions."),
+    ("Item 4 combines the counting unit with the detection level: in this study C2 counts "
+     "read-level protein hits while C4 counts geNomad-assigned contigs. Mapping reads back to "
+     "each sample's own viral contig set, so that only the unit changes, yields a contig-to-read "
+     "ratio of ≈0.6 — the opposite direction. The 5.4× is therefore an upper bound on the unit "
+     "effect; most of it arises from the detection level and the reference set."),
 ]
 
 COLS = ["No.", "Item", "What must be reported", "Consequence if omitted",
@@ -189,7 +194,7 @@ def main() -> None:
     lead.font.bold = True
     lead._element.rPr.rFonts.set(qn("w:eastAsia"), "SimSun")
 
-    sup = "abcdef"
+    sup = "abcdefgh"
     for i, note in enumerate(NOTES):
         run = pn.add_run(f"({sup[i]}) {note} ")
         run.font.name = "Times New Roman"

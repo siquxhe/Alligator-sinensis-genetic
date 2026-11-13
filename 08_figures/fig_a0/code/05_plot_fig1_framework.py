@@ -130,11 +130,11 @@ def build_dims(n: dict) -> list[dict]:
             "color": ORANGE,
         },
         {
-            "name": "Statistical unit",
+            "name": "Counting unit",
             "sub": "what you count",
-            "options": ["Read counts", "RPKM weighted", "Presence /\nabsence"],
+            "options": ["Read counts", "Contig counts", "RPKM weighted"],
             "fold": f"{n['fold_unit']:.1f}×",
-            "note": "contig-level inflation\n≠ more virus",
+            "note": "incl. detection level\n(see Results 5.2)",
             "color": GREEN,
         },
     ]
