@@ -34,13 +34,17 @@ if [ ! -s "$MP/$S.votu.counts.tsv" ]; then
   bowtie2 -x "$BASE/refs/votu" \
     -1 "$HR/$S.host_rm.fq.1.gz" -2 "$HR/$S.host_rm.fq.2.gz" \
     -p 6 --very-sensitive --no-unal 2> "$MP/$S.votu.bowtie2.log" \
-    | samtools view -F 2304 - \
-    | awk '$3 != "*" {print $3}' \
+    | awk -F'\t' '$1 !~ /^@/ && $3 != "*" && and($2, 2304) == 0 {print $3}' \
     | sort | uniq -c \
     | awk '{print $2"\t"$1}' | sort > "$MP/$S.votu.counts.tsv"
 fi
 
 CLEAN_FRAG=$(grep -m1 -oE "^[0-9]+ reads; of these" "$MP/$S.votu.bowtie2.log" | grep -oE "^[0-9]+")
+CLEAN_FRAG=${CLEAN_FRAG:-0}
+IN_FRAG=${IN_FRAG:-0}
+if [ "$CLEAN_FRAG" -eq 0 ] || [ "$IN_FRAG" -eq 0 ]; then
+  echo "ABORT: 片段计数为 0（$S），检查 bowtie2 日志"; exit 1
+fi
 MAPPED=$(awk '{s+=$2} END{print s+0}' "$MP/$S.votu.counts.tsv")
 VOTU_HIT=$(wc -l < "$MP/$S.votu.counts.tsv")
 
