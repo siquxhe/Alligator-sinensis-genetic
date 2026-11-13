@@ -1,5 +1,8 @@
 # Manuscript draft v0.1 — front half
 
+> **⚠️ 暂停维护（2026-11-13）**：工作稿已改为中文版
+> `manuscript_v0.2_front_中文_2026-11-13.md`，以该版为唯一准据；本文件仅作英文措辞参考，不再更新。
+
 **日期** 2026-11-13　|　**范围** Title / Abstract / Introduction / Results 5.1–5.3
 **状态** 初稿，待内部审阅；Methods、Discussion、cross-host 一节未写
 **约定** 正文英文；`[CIT]` 为待补引用占位，**不得凭印象填写**，须逐条核 PMID/DOI
