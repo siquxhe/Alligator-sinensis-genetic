@@ -1,0 +1,282 @@
+TY  - JOUR
+AU  - Goodacre, N.
+AU  - Aljanahi, A.
+AU  - Nandakumar, S.
+AU  - Mikailov, M.
+AU  - Khan, A. S.
+TI  - A Reference Viral Database (RVDB) To Enhance Bioinformatics Analysis of High-Throughput Sequencing for Novel Virus Detection
+JO  - mSphere
+VL  - 3
+IS  - 2
+SP  - e00069-18
+PY  - 2018
+DO  - 10.1128/mSphereDirect.00069-18
+AB  - RVDB includes all viral, virus-related, and virus-like nucleotide sequences, excluding bacterial viruses (bacteriophages), with reduced cellular content.
+ER  - 
+
+TY  - JOUR
+AU  - Chin, P.
+AU  - Bhavsar, J. D.
+AU  - Bosma, T. J.
+AU  - MacDonald, M. L.
+AU  - Polson, S. W.
+AU  - Khan, A. S.
+TI  - Refinement of the Reference Viral Database (RVDB) for improving bioinformatics analysis of virus detection by high-throughput sequencing (HTS)
+JO  - mSphere
+VL  - 10
+SP  - e00286-25
+PY  - 2025
+DO  - 10.1128/msphere.00286-25
+AB  - Bacterial viruses (phages) were excluded from RVDB to reduce false-positive hits due to their similarity with vectors and sequencing adapters.
+ER  - 
+
+TY  - JOUR
+AU  - Bigot, T.
+AU  - Temmam, S.
+AU  - Pérot, P.
+AU  - Eloit, M.
+TI  - RVDB-prot, a reference viral protein database and its HMM profiles
+JO  - F1000Research
+VL  - 8
+SP  - 530
+PY  - 2020
+DO  - 10.12688/f1000research.18776.2
+AB  - RVDB-prot is the protein equivalent of the nucleic acid RVDB and is built from the unclustered (U-) version of RVDB.
+ER  - 
+
+TY  - JOUR
+AU  - Callanan, J.
+AU  - Stockdale, S. R.
+AU  - Shkoporov, A.
+AU  - Draper, L. A.
+AU  - Ross, R. P.
+AU  - Hill, C.
+TI  - Biases in Viral Metagenomics-Based Detection, Cataloguing and Quantification of Bacteriophage Genomes in Human Faeces, a Review
+JO  - Microorganisms
+VL  - 9
+IS  - 3
+SP  - 524
+PY  - 2021
+DO  - 10.3390/microorganisms9030524
+AB  - Reviews stepwise biases in phage metagenomics, including reference-database dependence; notes that RVDB excludes bacterial viruses.
+ER  - 
+
+TY  - JOUR
+AU  - Junier, T.
+AU  - Huber, M.
+AU  - Schmutz, S.
+AU  - Kufner, V.
+AU  - Zagordi, O.
+AU  - Neuenschwander, S.
+AU  - Ramette, A.
+AU  - Kubacki, J.
+AU  - Bachofen, C.
+AU  - Qi, W.
+AU  - Laubscher, F.
+AU  - Cordey, S.
+AU  - Kaiser, L.
+AU  - Beuret, C.
+AU  - Barbié, V.
+AU  - Fellay, J.
+AU  - Lebrand, A.
+TI  - Viral Metagenomics in the Clinical Realm: Lessons Learned from a Swiss-Wide Ring Trial
+JO  - Genes
+VL  - 10
+IS  - 9
+SP  - 655
+PY  - 2019
+DO  - 10.3390/genes10090655
+AB  - Across laboratories using the same data and a shared database, performance was driven mainly by the mapping/classification algorithm; database choice showed no significant difference. Counter-evidence to address when claiming reference space as a major axis.
+ER  - 
+
+TY  - JOUR
+AU  - Choi, N. R.
+AU  - Park, J. H.
+AU  - Kim, T. S.
+AU  - Na, H. S.
+TI  - Benchmarking Read-Based Virome Profilers for Human Virus Detection and Community Discovery
+JO  - Journal of Bacteriology and Virology
+VL  - 55
+IS  - 4
+PY  - 2025
+AB  - Kraken2, FastViromeExplorer and ViromeScan produced markedly different viral signals across four body sites; database scope and mapping stringency reshaped biological conclusions. No DOI located at time of compilation.
+ER  - 
+
+TY  - JOUR
+AU  - Garmaeva, S.
+AU  - Gulyaeva, A.
+AU  - Sinha, T.
+AU  - Shkoporov, A. N.
+AU  - Clooney, A. G.
+AU  - Stockdale, S. R.
+AU  - Spreckels, J. E.
+AU  - Sutton, T. D. S.
+AU  - Draper, L. A.
+AU  - Dutilh, B. E.
+AU  - Wijmenga, C.
+AU  - Kurilshikov, A.
+AU  - Fu, J.
+AU  - Hill, C.
+AU  - Zhernakova, A.
+TI  - Stability of the human gut virome and effect of gluten-free diet
+JO  - Cell Reports
+VL  - 35
+IS  - 7
+SP  - 109132
+PY  - 2021
+DO  - 10.1016/j.celrep.2021.109132
+AB  - Longitudinal analysis of 11 adults; highly divergent individual viral communities, averaging 2,143 viral genomes with 13.1% present at all three time points.
+ER  - 
+
+TY  - JOUR
+AU  - Stockdale, S. R.
+AU  - Shkoporov, A. N.
+AU  - Khokhlova, E. V.
+AU  - Daly, K. M.
+AU  - McDonnell, S. A.
+AU  - O' Regan, O.
+AU  - Nolan, J. A.
+AU  - Sutton, T. D. S.
+AU  - Clooney, A. G.
+AU  - Ryan, F. J.
+AU  - Sheehan, D.
+AU  - Lavelle, A.
+AU  - Draper, L. A.
+AU  - Shanahan, F.
+AU  - Ross, R. P.
+AU  - Hill, C.
+TI  - Interpersonal variability of the human gut virome confounds disease signal detection in IBD
+JO  - Communications Biology
+VL  - 6
+IS  - 1
+PY  - 2023
+DO  - 10.1038/s42003-023-04592-w
+AB  - Interpersonal virome variability is large enough to obscure disease signals; most viruses are detected at a single time point.
+ER  - 
+
+TY  - JOUR
+AU  - Minot, S.
+AU  - Bryson, A.
+AU  - Chehoud, C.
+AU  - Wu, G. D.
+AU  - Lewis, J. D.
+AU  - Bushman, F. D.
+TI  - Rapid evolution of the human gut virome
+JO  - Proceedings of the National Academy of Sciences
+VL  - 110
+IS  - 30
+SP  - 12450
+EP  - 12455
+PY  - 2013
+DO  - 10.1073/pnas.1300833110
+AB  - Deep longitudinal sequencing of one adult over 2.5 years; about 80% of viral types persisted, indicating long-term stability alongside rapid microevolution.
+ER  - 
+
+TY  - JOUR
+AU  - Reyes, A.
+AU  - Haynes, M.
+AU  - Hanson, N.
+AU  - Angly, F. E.
+AU  - Heath, A. C.
+AU  - Rohwer, F.
+AU  - Gordon, J. I.
+TI  - Viruses in the faecal microbiota of monozygotic twins and their mothers
+JO  - Nature
+VL  - 466
+SP  - 334
+EP  - 338
+PY  - 2010
+DO  - 10.1038/nature09199
+AB  - Viromes of monozygotic twins remain highly individual-specific despite shared genetics and environment.
+ER  - 
+
+TY  - JOUR
+AU  - Roux, S.
+AU  - Adriaenssens, E. M.
+AU  - Dutilh, B. E.
+AU  - Koonin, E. V.
+AU  - Kropinski, A. M.
+AU  - Krupovic, M.
+AU  - Kuhn, J. H.
+AU  - Lavigne, R.
+AU  - Brister, J. R.
+AU  - Varsani, A.
+TI  - Minimum Information about an Uncultivated Virus Genome (MIUViG)
+JO  - Nature Biotechnology
+VL  - 37
+IS  - 1
+SP  - 29
+EP  - 37
+PY  - 2019
+DO  - 10.1038/nbt.4306
+AB  - Reporting standard for uncultivated viral genomes; does not specify how to compute a read-level viral fraction. Author list truncated to first ten; full list available via DOI.
+ER  - 
+
+TY  - JOUR
+AU  - Forbes, M.
+AU  - Ng, D. Y. K.
+AU  - Boggan, R. M.
+AU  - Frick-Kretschmer, A.
+AU  - Durham, J.
+AU  - Lorenz, O.
+AU  - Dave, B.
+AU  - Lassalle, F.
+AU  - Scott, C.
+AU  - Wagner, J.
+AU  - Lignes, A.
+AU  - Noaves, F.
+AU  - Jackson, D. K.
+AU  - Howe, K.
+AU  - Harrison, E. M.
+TI  - Benchmarking of human read removal strategies for viral and microbial metagenomics
+JO  - Cell Reports Methods
+VL  - 5
+IS  - 11
+SP  - 101218
+PY  - 2025
+DO  - 10.1016/j.crmeth.2025.101218
+AB  - Host-read removal methods and host reference choice alter retained read composition and downstream metrics, including ANI and diversity.
+ER  - 
+
+TY  - JOUR
+AU  - Tang, K.-Y.
+AU  - Wang, Z.-W.
+AU  - Wan, Q.-H.
+AU  - Fang, S.-G.
+TI  - Metagenomics Reveals Seasonal Functional Adaptation of the Gut Microbiome to Host Feeding and Fasting in the Chinese Alligator
+JO  - Frontiers in Microbiology
+VL  - 10
+SP  - 2409
+PY  - 2019
+DO  - 10.3389/fmicb.2019.02409
+AB  - Source publication for the six Alligator sinensis faecal metagenomes (PRJNA539906). Note: the title frames the study as a gut microbiome (bacterial) analysis of seasonal functional adaptation; verify whether it reports a viral read fraction before reusing its 0.04-4.03% value as C3.
+ER  - 
+
+TY  - UNPB
+AU  - Kosmopoulos, J. C.
+AU  - Martin, C.
+AU  - Wainaina, J. M.
+AU  - Bolduc, B.
+AU  - Urvoy, M.
+AU  - Sullivan, M. B.
+AU  - Anantharaman, K.
+TI  - CheckAMG: Accurate Identification of Auxiliary Viral Genes with Genome Language Models
+JO  - bioRxiv
+PY  - 2026
+DO  - 10.64898/2026.09.23.753886
+AB  - Preprint (posted 2026-09-27; PMID 42818345; PMC13622254). Tool for identifying auxiliary viral genes and their false-positive counterparts. Note the DOI prefix is 10.64898, not 10.1101.
+ER  - 
+
+TY  - UNPB
+AU  - Alami, S.
+AU  - Destras, G.
+AU  - Rimeur, M.
+AU  - Navratil, V.
+AU  - Josset, L.
+AU  - Anani, H.
+TI  - Benchmarking and integration of viral prediction tools to uncover viral dark matter across divergent low abundance metagenomes
+JO  - bioRxiv
+PY  - 2026
+DO  - 10.64898/2026.10.14.759168
+AB  - Preprint (posted 2026-10-19). Eleven viral prediction tools benchmarked on simulated low-abundance metagenomes; best performance from two-tool combinations plus Kraken2X filtering. Note the DOI prefix is 10.64898, not 10.1101.
+ER  - 
