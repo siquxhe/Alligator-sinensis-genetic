@@ -1,0 +1,230 @@
+TY  - JOUR
+AU  - Forbes, Matthew
+AU  - Ng, Duncan Y. K.
+AU  - Boggan, Róisín M.
+AU  - Frick-Kretschmer, Andrea
+AU  - Durham, Jillian
+AU  - Lorenz, Oliver
+TI  - Benchmarking of Human Read Removal Strategies for Viral and Microbial Metagenomics
+T2  - Cell Reports Methods
+PY  - 2025
+DO  - 10.1016/j.crmeth.2025.101218
+UR  - https://doi.org/10.1016/j.crmeth.2025.101218
+KW  - 一、核心
+N1  - 分母轴最近邻。它评的是宿主 reads 去除的性能与下游影响，不是病毒占比——正文必须主动划清界限
+ER  - 
+
+TY  - UNPB
+TI  - Benchmarking and integration of viral prediction tools to uncover viral dark matter across divergent low abundance metagenomes
+T2  - bioRxiv
+PY  - 2026
+DO  - 10.64898/2026.10.14.759168
+UR  - https://doi.org/10.64898/2026.10.14.759168
+KW  - 一、核心
+KW  - preprint
+N1  - 11 种病毒识别工具基准，结论是两两组合 + Kraken2X 过滤优于单工具；支持我们'无单一最佳流程'的论点
+ER  - 
+
+TY  - UNPB
+AU  - Kosmopoulos, James C.
+AU  - Martin, Cody
+AU  - Wainaina, James M.
+AU  - Bolduc, Benjamin
+AU  - Urvoy, Marion
+AU  - Sullivan, Matthew B.
+AU  - Anantharaman, Karthik
+TI  - CheckAMG: Accurate Identification of Auxiliary Viral Genes with Genome-Language Models
+T2  - bioRxiv
+PY  - 2026
+DO  - 10.64898/2026.09.23.753886
+UR  - https://doi.org/10.64898/2026.09.23.753886
+AN  - PMID:42818345
+KW  - 一、核心
+KW  - preprint
+N1  - 明确承认'病毒 vs 细胞来源归属存在歧义'，是 47.4% 代谢基因那段最硬的背书；同时是 cargo 判定的压力来源
+ER  - 
+
+TY  - JOUR
+AU  - Roux, Simon
+AU  - Adriaenssens, Evelien M.
+AU  - Dutilh, Bas E.
+AU  - Koonin, Eugene V.
+AU  - Kropinski, Andrew M.
+AU  - Krupovic, Mart
+AU  - Kuhn, Jens H.
+AU  - Lavigne, Rob
+AU  - Brister, J. Rodney
+AU  - Varsani, Arvind
+TI  - Minimum Information about an Uncultivated Virus Genome (MIUViG)
+T2  - Nature Biotechnology
+PY  - 2019
+VL  - 37
+IS  - 1
+SP  - 29
+EP  - 37
+DO  - 10.1038/nbt.4306
+UR  - https://doi.org/10.1038/nbt.4306
+AN  - PMID:30556814
+KW  - 一、核心
+N1  - 唯一现成的病毒组报告标准，但只覆盖基因组、不覆盖 read 层占比——这正是我们的空位
+ER  - 
+
+TY  - JOUR
+AU  - Mirzayi, Chloe
+AU  - Renson, Audrey
+AU  - Zohra, Fatima
+AU  - Elsafoury, Shaimaa
+AU  - Geistlinger, Ludwig
+AU  - Kasselman, Lora J.
+AU  - Eckenrode, Kelly
+AU  - van de Wijgert, Janneke
+AU  - Loughman, Amy
+AU  - Marques, Francine Z.
+TI  - Reporting guidelines for human microbiome research: the STORMS checklist
+T2  - Nature Medicine
+PY  - 2021
+VL  - 27
+IS  - 11
+SP  - 1885
+EP  - 1892
+DO  - 10.1038/s41591-021-01552-x
+UR  - https://doi.org/10.1038/s41591-021-01552-x
+AN  - PMID:34789871
+KW  - 二、决定 Table 2 站位
+N1  - 17 项清单、6 章节，是最成功的报告规范范式；其第 4.5 项已要求报告是否去除人源 DNA，Table 2 必须与之划界
+ER  - 
+
+TY  - JOUR
+AU  - Camargo, Antonio Pedro
+AU  - Roux, Simon
+AU  - Schulz, Frederik
+AU  - Babinski, Michal
+AU  - Xu, Yan
+AU  - Hu, Bin
+AU  - Chain, Patrick S. G.
+AU  - Nayfach, Stephen
+AU  - Kyrpides, Nikos C.
+TI  - Identification of mobile genetic elements with geNomad
+T2  - Nature Biotechnology
+PY  - 2024
+VL  - 42
+IS  - 8
+SP  - 1303
+EP  - 1312
+DO  - 10.1038/s41587-023-01953-y
+UR  - https://doi.org/10.1038/s41587-023-01953-y
+AN  - PMID:37735266
+KW  - 三、方法可信度
+N1  - C4 的来源工具；审稿人会问其 MCC 95.3% 的适用范围
+ER  - 
+
+TY  - JOUR
+AU  - Nayfach, Stephen
+AU  - Camargo, Antonio Pedro
+AU  - Schulz, Frederik
+AU  - Eloe-Fadrosh, Emiley
+AU  - Roux, Simon
+AU  - Kyrpides, Nikos C.
+TI  - CheckV assesses the quality and completeness of metagenome-assembled viral genomes
+T2  - Nature Biotechnology
+PY  - 2021
+VL  - 39
+IS  - 5
+SP  - 578
+EP  - 585
+DO  - 10.1038/s41587-020-00774-7
+UR  - https://doi.org/10.1038/s41587-020-00774-7
+KW  - 三、方法可信度
+N1  - 202 条基因组 Complete/High/Medium 分级的依据
+ER  - 
+
+TY  - JOUR
+AU  - Roux, Simon
+AU  - Camargo, Antonio Pedro
+AU  - Coutinho, Felipe H.
+AU  - Dabdoub, Shareef M.
+AU  - Dutilh, Bas E.
+AU  - Nayfach, Stephen
+AU  - Tritt, Andrew
+TI  - iPHoP: An integrated machine learning framework to maximize host prediction for metagenome-derived viruses of archaea and bacteria
+T2  - PLoS Biology
+PY  - 2023
+VL  - 21
+IS  - 4
+SP  - e3002083
+DO  - 10.1371/journal.pbio.3002083
+UR  - https://doi.org/10.1371/journal.pbio.3002083
+AN  - PMID:37083735
+KW  - 三、方法可信度
+N1  - 宿主预测工具；我们属级只有 2/5 的那个结果出自它
+ER  - 
+
+TY  - JOUR
+AU  - Sáenz, Johan S.
+AU  - Yergaliyev, Timur
+AU  - Rios-Galicia, Bibiana
+AU  - Seifert, Jana
+AU  - Camarinha-Silva, Amélia
+TI  - The chicken gut virome: spatial structuring and extensive diversity of 19,778 viral populations
+T2  - mSystems
+PY  - 2026
+VL  - 11
+IS  - 4
+SP  - e00191-26
+DO  - 10.1128/msystems.00191-26
+UR  - https://doi.org/10.1128/msystems.00191-26
+AN  - PMID:41910132
+KW  - 四、判断是否重复别人
+N1  - 第二数据集来源。注意它的写法：1,514 样本、19,778 vOTU，病毒丰度只给'mapped reads 作为代理'（1.10–1.84%）
+ER  - 
+
+TY  - JOUR
+AU  - Tang, Ke-Yi
+AU  - Wang, Zhen-Wei
+AU  - Wan, Qiu-Hong
+AU  - Fang, Sheng-Guo
+TI  - Metagenomics Reveals Seasonal Functional Adaptation of the Gut Microbiome to Host Feeding and Fasting in the Chinese Alligator
+T2  - Frontiers in Microbiology
+PY  - 2019
+VL  - 10
+SP  - 2409
+DO  - 10.3389/fmicb.2019.02409
+UR  - https://doi.org/10.3389/fmicb.2019.02409
+AN  - PMID:31708889
+KW  - 四、判断是否重复别人
+N1  - 扬子鳄原始数据来源；C3 那个 0.04–4.03% 出自它，且原文未说清怎么算的
+ER  - 
+
+TY  - UNPB
+TI  - LEMMIv2: Benchmarking Framework for Metagenomic and 16S Amplicon Profilers with a Catalogue of Evaluated Tools
+T2  - bioRxiv
+PY  - 2025
+DO  - 10.1101/2025.03.06.641904
+UR  - https://doi.org/10.1101/2025.03.06.641904
+KW  - 五、补充
+KW  - preprint
+N1  - 持续基准测试框架，支持'参考库/平台决定结论'
+ER  - 
+
+TY  - JOUR
+AU  - Hegarty, Bridget
+AU  - Riddell, James V.
+AU  - Bastien, Eric
+AU  - Langenfeld, Kathryn
+AU  - Lindback, Morgan
+AU  - Saini, Jaspreet S.
+AU  - Wing, Anthony
+AU  - Zhang, Jessica
+AU  - Duhaime, Melissa
+TI  - Benchmarking informatics approaches for virus discovery: caution is needed when combining in silico identification methods
+T2  - mSystems
+PY  - 2024
+VL  - 9
+IS  - 3
+SP  - e01105-23
+DO  - 10.1128/msystems.01105-23
+UR  - https://doi.org/10.1128/msystems.01105-23
+AN  - PMID:38376167
+KW  - 五、补充
+N1  - 组合工具并不必然更优；与'多口径并列'的论点呼应
+ER  - 
