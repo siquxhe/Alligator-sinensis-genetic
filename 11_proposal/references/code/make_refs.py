@@ -12,12 +12,17 @@
 
 from pathlib import Path
 
-from docx import Document
-from docx.enum.table import WD_TABLE_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.oxml import OxmlElement
-from docx.oxml.ns import qn
-from docx.shared import Cm, Pt
+try:  # docx 仅用于人读版；未安装 python-docx 时仍生成 ris 与 md
+    from docx import Document
+    from docx.enum.table import WD_TABLE_ALIGNMENT
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    from docx.shared import Cm, Pt
+
+    HAVE_DOCX = True
+except ImportError:
+    HAVE_DOCX = False
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent
@@ -148,6 +153,115 @@ REFS = [
         journal="mSystems", year="2024", volume="9", issue="3", pages="e01105-23",
         doi="10.1128/msystems.01105-23", pmid="38376167",
         why="组合工具并不必然更优；与'多口径并列'的论点呼应",
+    ),
+    # ---------------- 六、RVDB 溯源与个体特异性（2026-11-14 补） ----------------
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Goodacre", "N."), ("Aljanahi", "A."), ("Nandakumar", "S."),
+                 ("Mikailov", "M."), ("Khan", "A. S.")],
+        title="A Reference Viral Database (RVDB) To Enhance Bioinformatics Analysis of High-Throughput Sequencing for Novel Virus Detection",
+        journal="mSphere", year="2018", volume="3", issue="2", pages="e00069-18",
+        doi="10.1128/mSphereDirect.00069-18", pmid="29564396",
+        why="RVDB 原始文献，明写收录范围 excluding bacterial viruses。Methods 声明库组成的第一出处；若 C1/C2 用 RVDB，必须引它",
+    ),
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Chin", "P."), ("Bhavsar", "J. D."), ("Bosma", "T. J."),
+                 ("MacDonald", "M. L."), ("Polson", "S. W."), ("Khan", "A. S.")],
+        title="Refinement of the Reference Viral Database (RVDB) for improving bioinformatics analysis of virus detection by high-throughput sequencing (HTS)",
+        journal="mSphere", year="2025", volume="10", issue="", pages="e00286-25",
+        doi="10.1128/msphere.00286-25", pmid="",
+        why="RVDB 2025 精修版，再次确认 phages 被排除（to reduce false-positive hits）。与 Goodacre 2018 配对，构成'库不含噬菌体'的双证",
+    ),
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Bigot", "T."), ("Temmam", "S."), ("Pérot", "P."), ("Eloit", "M.")],
+        title="RVDB-prot, a reference viral protein database and its HMM profiles",
+        journal="F1000Research", year="2020", volume="8", issue="", pages="530",
+        doi="10.12688/f1000research.18776.2", pmid="32983411",
+        why="RVDB-prot 由 U-RVDB 核酸条目逐条转换而来，官方未逐字声明噬菌体范围——属推断继承。写进 Methods 前须用 workflow/check_rvdb_phage.sh 在本批库上验证",
+    ),
+    dict(
+        group="三、方法可信度（被问到能答）",
+        ty="JOUR",
+        authors=[("Callanan", "J."), ("Stockdale", "S. R."), ("Shkoporov", "A."),
+                 ("Draper", "L. A."), ("Ross", "R. P."), ("Hill", "C.")],
+        title="Biases in Viral Metagenomics-Based Detection, Cataloguing and Quantification of Bacteriophage Genomes in Human Faeces, a Review",
+        journal="Microorganisms", year="2021", volume="9", issue="3", pages="524",
+        doi="10.3390/microorganisms9030524", pmid="",
+        why="逐环节偏差综述（采样、MDA、组装、数据库、注释），并指出 RVDB 排除噬菌体；直接支撑 Table 2 第 1–4 项",
+    ),
+    dict(
+        group="四、判断是否重复别人",
+        ty="JOUR",
+        authors=[("Junier", "T."), ("Huber", "M."), ("Schmutz", "S."), ("Kufner", "V."),
+                 ("Zagordi", "O."), ("Neuenschwander", "S."), ("Ramette", "A."),
+                 ("Kubacki", "J."), ("Bachofen", "C."), ("Qi", "W."), ("Laubscher", "F."),
+                 ("Cordey", "S."), ("Kaiser", "L."), ("Beuret", "C."), ("Barbié", "V."),
+                 ("Fellay", "J."), ("Lebrand", "A.")],
+        title="Viral Metagenomics in the Clinical Realm: Lessons Learned from a Swiss-Wide Ring Trial",
+        journal="Genes", year="2019", volume="10", issue="9", pages="655",
+        doi="10.3390/genes10090655", pmid="",
+        why="反证，必须主动处理：同一数据、同一共享库下性能主要由算法决定，库间无显著差异。区分点——他们比两个精选库，我们比'不含噬菌体的公共蛋白库 vs 含噬菌体的自组装目录'",
+    ),
+    dict(
+        group="四、判断是否重复别人",
+        ty="JOUR",
+        authors=[("Choi", "N. R."), ("Park", "J. H."), ("Kim", "T. S."), ("Na", "H. S.")],
+        title="Benchmarking Read-Based Virome Profilers for Human Virus Detection and Community Discovery",
+        journal="Journal of Bacteriology and Virology", year="2025", volume="55", issue="4", pages="",
+        doi="", pmid="",
+        why="三种 read-based profiler 在同一数据上给出显著不同的病毒信号。⚠️ 未找到 DOI，导入 Zotero 后需手工补卷期页；补不到则改用 Callanan 2021",
+    ),
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Garmaeva", "S."), ("Gulyaeva", "A."), ("Sinha", "T."), ("Shkoporov", "A. N."),
+                 ("Clooney", "A. G."), ("Stockdale", "S. R."), ("Spreckels", "J. E."),
+                 ("Sutton", "T. D. S."), ("Draper", "L. A."), ("Dutilh", "B. E."),
+                 ("Wijmenga", "C."), ("Kurilshikov", "A."), ("Fu", "J."), ("Hill", "C."),
+                 ("Zhernakova", "A.")],
+        title="Stability of the human gut virome and effect of gluten-free diet",
+        journal="Cell Reports", year="2021", volume="35", issue="7", pages="109132",
+        doi="10.1016/j.celrep.2021.109132", pmid="34010651",
+        why="11 人纵向，个体间高度分化；CIT-7 首选。其 Lifelines 工具比较（三种工具均 <1% 但彼此差异显著）可作 CIT-1 辅证——要写'估计随工具浮动'，不能写'病毒就是 <1%'",
+    ),
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Stockdale", "S. R."), ("Shkoporov", "A. N."), ("Khokhlova", "E. V."),
+                 ("Daly", "K. M."), ("McDonnell", "S. A."), ("O' Regan", "O."),
+                 ("Nolan", "J. A."), ("Sutton", "T. D. S."), ("Clooney", "A. G."),
+                 ("Ryan", "F. J."), ("Sheehan", "D."), ("Lavelle", "A."), ("Draper", "L. A."),
+                 ("Shanahan", "F."), ("Ross", "R. P."), ("Hill", "C.")],
+        title="Interpersonal variability of the human gut virome confounds disease signal detection in IBD",
+        journal="Communications Biology", year="2023", volume="6", issue="1", pages="",
+        doi="10.1038/s42003-023-04592-w", pmid="",
+        why="个体变异足以淹没疾病信号；比'个体差异大'更强的表述，适合解释 6 样本为何不能做组间比较",
+    ),
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Minot", "S."), ("Bryson", "A."), ("Chehoud", "C."),
+                 ("Wu", "G. D."), ("Lewis", "J. D."), ("Bushman", "F. D.")],
+        title="Rapid evolution of the human gut virome",
+        journal="Proceedings of the National Academy of Sciences", year="2013",
+        volume="110", issue="30", pages="12450-12455",
+        doi="10.1073/pnas.1300833110", pmid="",
+        why="单个体 2.5 年纵向，约 80% 病毒类型持续；用于'个体内稳定、个体间不同'这对表述",
+    ),
+    dict(
+        group="六、RVDB 溯源与个体特异性",
+        ty="JOUR",
+        authors=[("Reyes", "A."), ("Haynes", "M."), ("Hanson", "N."), ("Angly", "F. E."),
+                 ("Heath", "A. C."), ("Rohwer", "F."), ("Gordon", "J. I.")],
+        title="Viruses in the faecal microbiota of monozygotic twins and their mothers",
+        journal="Nature", year="2010", volume="466", issue="", pages="334-338",
+        doi="10.1038/nature09199", pmid="",
+        why="同卵双生儿病毒组仍各自成组——经典对照，排除'遗传决定'这一解释",
     ),
 ]
 
@@ -322,14 +436,26 @@ def build_md(refs, path):
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def _group_key(r):
+    """按组名首字（一、二、…）排序，避免同类分组被拆成多段。"""
+    order = "一二三四五六七八九十"
+    g = r.get("group", "")
+    return order.index(g[0]) if g and g[0] in order else 99
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    refs = sorted(REFS, key=_group_key)  # 稳定排序，组内保持原始顺序
     ris = OUT / "refs.ris"
-    ris.write_text(ris_text(REFS), encoding="utf-8")
-    build_docx(REFS, OUT / "references_table.docx")
-    build_md(REFS, OUT / "references_table.md")
-    print(f"ris  : {ris}  ({len(REFS)} 条)")
-    print(f"docx : {OUT / 'references_table.docx'}")
+    ris.write_text(ris_text(refs), encoding="utf-8")
+    if HAVE_DOCX:
+        build_docx(refs, OUT / "references_table.docx")
+    else:
+        print("docx : skipped（未安装 python-docx；ris 与 md 已更新，docx 需在装有 python-docx 的机器上重跑）")
+    build_md(refs, OUT / "references_table.md")
+    print(f"ris  : {ris}  ({len(refs)} 条)")
+    if HAVE_DOCX:
+        print(f"docx : {OUT / 'references_table.docx'}")
     print(f"md   : {OUT / 'references_table.md'}")
 
 

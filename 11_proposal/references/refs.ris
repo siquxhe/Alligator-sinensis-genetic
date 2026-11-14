@@ -160,6 +160,25 @@ N1  - 宿主预测工具；我们属级只有 2/5 的那个结果出自它
 ER  - 
 
 TY  - JOUR
+AU  - Callanan, J.
+AU  - Stockdale, S. R.
+AU  - Shkoporov, A.
+AU  - Draper, L. A.
+AU  - Ross, R. P.
+AU  - Hill, C.
+TI  - Biases in Viral Metagenomics-Based Detection, Cataloguing and Quantification of Bacteriophage Genomes in Human Faeces, a Review
+T2  - Microorganisms
+PY  - 2021
+VL  - 9
+IS  - 3
+SP  - 524
+DO  - 10.3390/microorganisms9030524
+UR  - https://doi.org/10.3390/microorganisms9030524
+KW  - 三、方法可信度
+N1  - 逐环节偏差综述（采样、MDA、组装、数据库、注释），并指出 RVDB 排除噬菌体；直接支撑 Table 2 第 1–4 项
+ER  - 
+
+TY  - JOUR
 AU  - Sáenz, Johan S.
 AU  - Yergaliyev, Timur
 AU  - Rios-Galicia, Bibiana
@@ -195,6 +214,50 @@ KW  - 四、判断是否重复别人
 N1  - 扬子鳄原始数据来源；C3 那个 0.04–4.03% 出自它，且原文未说清怎么算的
 ER  - 
 
+TY  - JOUR
+AU  - Junier, T.
+AU  - Huber, M.
+AU  - Schmutz, S.
+AU  - Kufner, V.
+AU  - Zagordi, O.
+AU  - Neuenschwander, S.
+AU  - Ramette, A.
+AU  - Kubacki, J.
+AU  - Bachofen, C.
+AU  - Qi, W.
+AU  - Laubscher, F.
+AU  - Cordey, S.
+AU  - Kaiser, L.
+AU  - Beuret, C.
+AU  - Barbié, V.
+AU  - Fellay, J.
+AU  - Lebrand, A.
+TI  - Viral Metagenomics in the Clinical Realm: Lessons Learned from a Swiss-Wide Ring Trial
+T2  - Genes
+PY  - 2019
+VL  - 10
+IS  - 9
+SP  - 655
+DO  - 10.3390/genes10090655
+UR  - https://doi.org/10.3390/genes10090655
+KW  - 四、判断是否重复别人
+N1  - 反证，必须主动处理：同一数据、同一共享库下性能主要由算法决定，库间无显著差异。区分点——他们比两个精选库，我们比'不含噬菌体的公共蛋白库 vs 含噬菌体的自组装目录'
+ER  - 
+
+TY  - JOUR
+AU  - Choi, N. R.
+AU  - Park, J. H.
+AU  - Kim, T. S.
+AU  - Na, H. S.
+TI  - Benchmarking Read-Based Virome Profilers for Human Virus Detection and Community Discovery
+T2  - Journal of Bacteriology and Virology
+PY  - 2025
+VL  - 55
+IS  - 4
+KW  - 四、判断是否重复别人
+N1  - 三种 read-based profiler 在同一数据上给出显著不同的病毒信号。⚠️ 未找到 DOI，导入 Zotero 后需手工补卷期页；补不到则改用 Callanan 2021
+ER  - 
+
 TY  - UNPB
 TI  - LEMMIv2: Benchmarking Framework for Metagenomic and 16S Amplicon Profilers with a Catalogue of Evaluated Tools
 T2  - bioRxiv
@@ -227,4 +290,155 @@ UR  - https://doi.org/10.1128/msystems.01105-23
 AN  - PMID:38376167
 KW  - 五、补充
 N1  - 组合工具并不必然更优；与'多口径并列'的论点呼应
+ER  - 
+
+TY  - JOUR
+AU  - Goodacre, N.
+AU  - Aljanahi, A.
+AU  - Nandakumar, S.
+AU  - Mikailov, M.
+AU  - Khan, A. S.
+TI  - A Reference Viral Database (RVDB) To Enhance Bioinformatics Analysis of High-Throughput Sequencing for Novel Virus Detection
+T2  - mSphere
+PY  - 2018
+VL  - 3
+IS  - 2
+SP  - e00069-18
+DO  - 10.1128/mSphereDirect.00069-18
+UR  - https://doi.org/10.1128/mSphereDirect.00069-18
+AN  - PMID:29564396
+KW  - 六、RVDB 溯源与个体特异性
+N1  - RVDB 原始文献，明写收录范围 excluding bacterial viruses。Methods 声明库组成的第一出处；若 C1/C2 用 RVDB，必须引它
+ER  - 
+
+TY  - JOUR
+AU  - Chin, P.
+AU  - Bhavsar, J. D.
+AU  - Bosma, T. J.
+AU  - MacDonald, M. L.
+AU  - Polson, S. W.
+AU  - Khan, A. S.
+TI  - Refinement of the Reference Viral Database (RVDB) for improving bioinformatics analysis of virus detection by high-throughput sequencing (HTS)
+T2  - mSphere
+PY  - 2025
+VL  - 10
+SP  - e00286-25
+DO  - 10.1128/msphere.00286-25
+UR  - https://doi.org/10.1128/msphere.00286-25
+KW  - 六、RVDB 溯源与个体特异性
+N1  - RVDB 2025 精修版，再次确认 phages 被排除（to reduce false-positive hits）。与 Goodacre 2018 配对，构成'库不含噬菌体'的双证
+ER  - 
+
+TY  - JOUR
+AU  - Bigot, T.
+AU  - Temmam, S.
+AU  - Pérot, P.
+AU  - Eloit, M.
+TI  - RVDB-prot, a reference viral protein database and its HMM profiles
+T2  - F1000Research
+PY  - 2020
+VL  - 8
+SP  - 530
+DO  - 10.12688/f1000research.18776.2
+UR  - https://doi.org/10.12688/f1000research.18776.2
+AN  - PMID:32983411
+KW  - 六、RVDB 溯源与个体特异性
+N1  - RVDB-prot 由 U-RVDB 核酸条目逐条转换而来，官方未逐字声明噬菌体范围——属推断继承。写进 Methods 前须用 workflow/check_rvdb_phage.sh 在本批库上验证
+ER  - 
+
+TY  - JOUR
+AU  - Garmaeva, S.
+AU  - Gulyaeva, A.
+AU  - Sinha, T.
+AU  - Shkoporov, A. N.
+AU  - Clooney, A. G.
+AU  - Stockdale, S. R.
+AU  - Spreckels, J. E.
+AU  - Sutton, T. D. S.
+AU  - Draper, L. A.
+AU  - Dutilh, B. E.
+AU  - Wijmenga, C.
+AU  - Kurilshikov, A.
+AU  - Fu, J.
+AU  - Hill, C.
+AU  - Zhernakova, A.
+TI  - Stability of the human gut virome and effect of gluten-free diet
+T2  - Cell Reports
+PY  - 2021
+VL  - 35
+IS  - 7
+SP  - 109132
+DO  - 10.1016/j.celrep.2021.109132
+UR  - https://doi.org/10.1016/j.celrep.2021.109132
+AN  - PMID:34010651
+KW  - 六、RVDB 溯源与个体特异性
+N1  - 11 人纵向，个体间高度分化；CIT-7 首选。其 Lifelines 工具比较（三种工具均 <1% 但彼此差异显著）可作 CIT-1 辅证——要写'估计随工具浮动'，不能写'病毒就是 <1%'
+ER  - 
+
+TY  - JOUR
+AU  - Stockdale, S. R.
+AU  - Shkoporov, A. N.
+AU  - Khokhlova, E. V.
+AU  - Daly, K. M.
+AU  - McDonnell, S. A.
+AU  - O' Regan, O.
+AU  - Nolan, J. A.
+AU  - Sutton, T. D. S.
+AU  - Clooney, A. G.
+AU  - Ryan, F. J.
+AU  - Sheehan, D.
+AU  - Lavelle, A.
+AU  - Draper, L. A.
+AU  - Shanahan, F.
+AU  - Ross, R. P.
+AU  - Hill, C.
+TI  - Interpersonal variability of the human gut virome confounds disease signal detection in IBD
+T2  - Communications Biology
+PY  - 2023
+VL  - 6
+IS  - 1
+DO  - 10.1038/s42003-023-04592-w
+UR  - https://doi.org/10.1038/s42003-023-04592-w
+KW  - 六、RVDB 溯源与个体特异性
+N1  - 个体变异足以淹没疾病信号；比'个体差异大'更强的表述，适合解释 6 样本为何不能做组间比较
+ER  - 
+
+TY  - JOUR
+AU  - Minot, S.
+AU  - Bryson, A.
+AU  - Chehoud, C.
+AU  - Wu, G. D.
+AU  - Lewis, J. D.
+AU  - Bushman, F. D.
+TI  - Rapid evolution of the human gut virome
+T2  - Proceedings of the National Academy of Sciences
+PY  - 2013
+VL  - 110
+IS  - 30
+SP  - 12450
+EP  - 12455
+DO  - 10.1073/pnas.1300833110
+UR  - https://doi.org/10.1073/pnas.1300833110
+KW  - 六、RVDB 溯源与个体特异性
+N1  - 单个体 2.5 年纵向，约 80% 病毒类型持续；用于'个体内稳定、个体间不同'这对表述
+ER  - 
+
+TY  - JOUR
+AU  - Reyes, A.
+AU  - Haynes, M.
+AU  - Hanson, N.
+AU  - Angly, F. E.
+AU  - Heath, A. C.
+AU  - Rohwer, F.
+AU  - Gordon, J. I.
+TI  - Viruses in the faecal microbiota of monozygotic twins and their mothers
+T2  - Nature
+PY  - 2010
+VL  - 466
+SP  - 334
+EP  - 338
+DO  - 10.1038/nature09199
+UR  - https://doi.org/10.1038/nature09199
+KW  - 六、RVDB 溯源与个体特异性
+N1  - 同卵双生儿病毒组仍各自成组——经典对照，排除'遗传决定'这一解释
 ER  - 
