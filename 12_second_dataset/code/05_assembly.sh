@@ -76,6 +76,8 @@ for S in $SAMPLES; do
   PCT=$(awk -v v="$N_VIR" -v t="$N_CTG" 'BEGIN{if(t>0) printf "%.3f", v/t*100; else print "NA"}')
   HR_PCT=$(awk -v i="$IN_FRAG" -v c="$CLEAN_FRAG" 'BEGIN{if(i>0) printf "%.3f", (i-c)/i*100; else print "NA"}')
 
+  # 幂等：先删除该样本的旧行，避免重启续跑时重复追加
+  awk -F'\t' -v s="$S" 'NR==1 || $1 != s' "$SUM" > "$SUM.tmp" && mv "$SUM.tmp" "$SUM"
   printf "%s\t%d\t%d\t%s\t%d\t%d\t%s\n" "$S" "$IN_FRAG" "$CLEAN_FRAG" "$HR_PCT" "$N_CTG" "$N_VIR" "$PCT" >> "$SUM"
   echo "  病毒 contigs: $N_VIR  ($PCT%)"
   tail -1 "$SUM"

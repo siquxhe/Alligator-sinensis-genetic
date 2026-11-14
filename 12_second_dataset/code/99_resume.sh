@@ -15,4 +15,5 @@ if pgrep -f "bin/05_assembly.sh" > /dev/null; then
 fi
 
 echo "[$(date)] @reboot 自动续跑 05_assembly" >> "$BASE/raw/logs/reboot.log"
-setsid -f bash bin/05_assembly.sh >> "$BASE/raw/logs/assembly.log" 2>&1
+# 串行：组装队列结束后接着跑纯单位对照（06 自身可重入）
+setsid -f bash -c 'bash bin/05_assembly.sh >> "$BASE/raw/logs/assembly.log" 2>&1; bash bin/06_unit_test.sh >> "$BASE/raw/logs/unit.log" 2>&1' >> "$BASE/raw/logs/reboot.log" 2>&1
