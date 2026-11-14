@@ -3,6 +3,7 @@
 # 参数与主项目 workflow/server_run_c.sh 完全一致，保证 C4 跨宿主可比
 # 用法：nohup setsid bash 05_assembly.sh > logs/assembly.log 2>&1 &
 set -uo pipefail
+trap '' HUP TERM   # 会话断开时不被带走
 
 BASE=/mnt/work/chicken
 E=$HOME/biotools/envs/virome/bin
@@ -48,7 +49,7 @@ for S in $SAMPLES; do
     rm -rf "$AS/$S"
     megahit -1 "$HR/$S.host_rm.fq.1.gz" -2 "$HR/$S.host_rm.fq.2.gz" \
       -o "$AS/$S" --out-prefix "$S" \
-      -t 8 --min-contig-len 1000 -m 0.5 > "$AS/$S.megahit.log" 2>&1
+      -t 6 --min-contig-len 1000 -m 0.5 > "$AS/$S.megahit.log" 2>&1
   fi
   if [ ! -s "$C" ]; then
     echo "[$(date +%H:%M)] 组装失败，跳过 $S"
@@ -62,7 +63,7 @@ for S in $SAMPLES; do
   if ! compgen -G "$G/*_summary/*_virus.fna" >/dev/null 2>&1; then
     echo "[$(date +%H:%M)] geNomad 开始（MMseqs2 搜库，较慢）"
     rm -rf "$G"
-    genomad end-to-end "$C" "$G" "$DB" --threads 8 --splits 4 --cleanup > "$AS/$S.genomad.log" 2>&1
+    genomad end-to-end "$C" "$G" "$DB" --threads 4 --splits 2 --cleanup > "$AS/$S.genomad.log" 2>&1
   fi
 
   VF=$(ls "$G"/*_summary/*_virus.fna 2>/dev/null | head -1)
