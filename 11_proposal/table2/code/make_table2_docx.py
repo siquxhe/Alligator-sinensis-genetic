@@ -36,7 +36,8 @@ TITLE = ("Table 2. Minimum reporting checklist for viral-fraction estimates "
 NOTES = [
     ("Values in the last column are the median (range) fold change across the six samples, "
      "computed with the other dimensions held fixed. They are not multiplicative: "
-     "1.01 × 5.6 × 7.1 × 5.4 ≈ 217, whereas the observed overall span is 171×."),
+     "7.1 × 5.6 ≈ 40, whereas the observed overall span is 171×; the gap reflects "
+     "sample-to-sample variation in each ratio (C5/C2 ranges 3.0–22.1× across samples)."),
     ("Items 1–4 correspond to the four dimensions in Fig. 1; items 5–8 concern reliability "
      "rather than definition."),
     ("The denominator effect was measured in fecal samples with low host content (0.07–2.51%). "
@@ -51,9 +52,10 @@ NOTES = [
      "which specifies reporting of uncultivated viral genomes rather than read-level fractions."),
     ("Item 4 combines the counting unit with the detection level: in this study C2 counts "
      "read-level protein hits while C4 counts geNomad-assigned contigs. Mapping reads back to "
-     "each sample's own viral contig set, so that only the unit changes, yields a contig-to-read "
-     "ratio of ≈0.6 — the opposite direction. The 5.4× is therefore an upper bound on the unit "
-     "effect; most of it arises from the detection level and the reference set."),
+     "each sample's own viral contig set, so that only the unit changes, gives a median "
+     "contig-to-read ratio of 1.01 (range 0.49–1.61, n = 6): the unit alone leaves the estimate "
+     "unchanged on average while scattering 3.3-fold between samples. The 5.4× therefore arises "
+     "almost entirely from the detection level and the reference set, not from the unit."),
 ]
 
 COLS = ["No.", "Item", "What must be reported", "Consequence if omitted",

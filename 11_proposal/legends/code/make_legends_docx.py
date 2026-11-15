@@ -28,12 +28,12 @@ LEGENDS = [
         "Figure 1. ",
         "Four reporting decisions determine the viral fraction of a gut metagenome.",
         "Each row is a choice that has to be made before a viral fraction can be reported: "
-        "denominator, reference space, category filter, and statistical unit. Boxes list the "
+        "denominator, reference space, category filter, and counting unit. Boxes list the "
         "alternatives available at each decision. Values on the right are median fold changes "
         "measured in this dataset with the other dimensions held fixed, from six fecal "
         "metagenomes of _Alligator sinensis_ (PRJNA539906; n = 6). Across all definitions and "
         "samples the observed span is 171× (0.089–15.2%). These fold changes are not "
-        "multiplicative: 1.01 × 5.6 × 7.1 × 5.4 ≈ 217, whereas the measured span is 171×, "
+        "multiplicative: 7.1 × 5.6 ≈ 40, whereas the measured span is 171×; "
         "because each ratio derives from a different sample and a different pair of "
         "definitions. Within a single sample, definitions alone span 22.2–124.8×, and the "
         "additional sample effect is 1.37× (Fig. 2). The denominator row shows a near-unity "
@@ -53,7 +53,7 @@ LEGENDS = [
         "their ≤1.2% difference. **(B)** Fold change between definitions, computed within each "
         "sample (n = 6) and summarised as boxplots; the dashed line marks no change and numbers "
         "above the boxes are medians. Definitions are not independent: the product of the four "
-        "median ratios (≈217) exceeds the observed 171-fold span.",
+        "median ratios (≈40) falls well short of the observed 171-fold span.",
     ),
     (
         "Figure 3. ",

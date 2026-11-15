@@ -13,7 +13,8 @@ Fig 1 —— 病毒占比的四个决策维度
 1. 分母 (Denominator)          C2 / C6   实测 ≈1.01×（粪便样本中几乎无影响）
 2. 参考空间 (Reference space)   C5 / C2   实测 ≈5.6×
 3. 类别筛选 (Category filter)   C2 / C1   实测 ≈7.1×（最大单项效应）
-4. 统计单元 (Statistical unit)  C4 / C2   实测 ≈5.4×
+4. 计数对象 (Counting unit)    C4 / C2   实测 ≈5.4×（含检测层面）
+   纯单位效应（同一病毒集，六样本对照）中位 1.01×（0.49–1.61）
 
 全口径极值 0.089% – 15.23%，总跨度 ≈171×。
 该跨度须分解：同一样本内 C5/C1 已达 22–125×（纯定义效应），
@@ -41,6 +42,7 @@ from matplotlib.patches import FancyBboxPatch
 HERE = Path(__file__).resolve().parent
 FIG = HERE.parent
 OUT = FIG / "output"
+UNIT_TSV = HERE.parents[2] / "09_tables" / "unit_axis_alligator.tsv"
 OUT.mkdir(exist_ok=True)
 TAB = FIG.parent / "fig_a1" / "output" / "Table1_five_denominators.tsv"
 
@@ -64,7 +66,8 @@ def load_numbers() -> dict:
     # 各维度倍数：逐样本求比值后取中位，避免单样本极值主导
     fold_cat = float(np.median(c2 / c1))     # 类别筛选
     fold_ref = float(np.median(c5 / c2))     # 参考空间
-    fold_unit = float(np.median(c4 / c2))    # 统计单元
+    fold_unit = float(np.median(c4 / c2))    # 计数对象（含检测层面）
+    unit_only = float(pd.read_csv(UNIT_TSV, sep="\t")["ratio_contig_over_reads"].median())
     fold_den = float(np.max(c2 / c6))        # 分母（取最大影响）
 
     # 同一批定义、同一样本内的定义效应
@@ -83,6 +86,7 @@ def load_numbers() -> dict:
         fold_cat=fold_cat,
         fold_ref=fold_ref,
         fold_unit=fold_unit,
+        unit_only=unit_only,
         fold_den=fold_den,
         within=(float(within.min()), float(within.max())),
         sample_effect=sample_effect,
@@ -96,7 +100,8 @@ def check(n: dict) -> None:
     """与上游输出一致性断言：数值漂移即报错，不静默出图。"""
     assert 6.7 <= n["fold_cat"] <= 7.6, f"类别筛选倍数异常 {n['fold_cat']:.2f}，请重跑 fig_a1"
     assert 5.0 <= n["fold_ref"] <= 6.5, f"参考空间倍数异常 {n['fold_ref']:.2f}，请重跑 fig_a1"
-    assert 5.0 <= n["fold_unit"] <= 6.0, f"统计单元倍数异常 {n['fold_unit']:.2f}，请重跑 fig_a1"
+    assert 5.0 <= n["fold_unit"] <= 6.0, f"C4/C2 倍数异常 {n['fold_unit']:.2f}，请重跑 fig_a1"
+    assert 0.9 <= n["unit_only"] <= 1.1, f"纯单位比值异常 {n['unit_only']:.3f}，检查 unit_axis_alligator.tsv"
     assert n["fold_den"] <= 1.05, f"分母倍数异常 {n['fold_den']:.3f}，检查 C6 分母是否为去宿主前计数"
     assert 155 <= n["overall"] <= 185, f"总跨度异常 {n['overall']:.0f}×，请重跑 fig_a1"
     assert n["gmin"] < 0.1 and n["gmax"] > 15.0, "极值区间不符合预期"
@@ -133,8 +138,8 @@ def build_dims(n: dict) -> list[dict]:
             "name": "Counting unit",
             "sub": "what you count",
             "options": ["Read counts", "Contig counts", "RPKM weighted"],
-            "fold": f"{n['fold_unit']:.1f}×",
-            "note": "incl. detection level\n(see Results 5.2)",
+            "fold": f"{n['unit_only']:.1f}×",
+            "note": "unit only (0.49–1.61);\n5.4× incl. detection",
             "color": GREEN,
         },
     ]
@@ -251,7 +256,8 @@ def main() -> None:
     print(f"  分母 C2/C6      {n['fold_den']:.3f}×")
     print(f"  参考空间 C5/C2  {n['fold_ref']:.2f}×")
     print(f"  类别筛选 C2/C1  {n['fold_cat']:.2f}×")
-    print(f"  统计单元 C4/C2  {n['fold_unit']:.2f}×")
+    print(f"  计数对象 C4/C2  {n['fold_unit']:.2f}×（含检测层面）")
+    print(f"  纯单位效应      {n['unit_only']:.3f}×（同一病毒集，六样本中位）")
     print(f"  同一样本内 C5/C1 {n['within'][0]:.1f}–{n['within'][1]:.1f}×")
     print(f"  样本效应         {n['sample_effect']:.2f}×")
     print(f"  总跨度           {n['overall']:.0f}×  ({n['gmin']:.4g}% – {n['gmax']:.4g}%)")
