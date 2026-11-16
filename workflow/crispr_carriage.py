@@ -401,9 +401,10 @@ def main() -> int:
                 "metric": label,
                 "n_positive": k,
                 "n_evaluable": n,
-                "pct": f"{pct:.2f}" if n else "",
-                "ci95_low": f"{lo:.2f}" if n else "",
-                "ci95_high": f"{hi:.2f}" if n else "",
+                # n==0 时不得输出 0.00（会被读成"阳性率为 0"）；写 NA 并提示分母缺失
+                "pct": f"{pct:.2f}" if n else "NA",
+                "ci95_low": f"{lo:.2f}" if n else "NA",
+                "ci95_high": f"{hi:.2f}" if n else "NA",
             }
         )
     with open(summary_path, "w", newline="") as fh:
@@ -457,10 +458,18 @@ def main() -> int:
     for row in summary_rows:
         print(
             f"  {row['metric']:<18} {row['n_positive']}/{row['n_evaluable']}"
-            f"  {row['pct']}%  (95% CI {row['ci95_low']}–{row['ci95_high']})"
+            + (f"  {row['pct']}%  (95% CI {row['ci95_low']}–{row['ci95_high']})"
+               if row["pct"] != "NA"
+               else "  NA (n_evaluable = 0, 结果不可解释)")
         )
     if any(r["array_status"] != "ok" for r in rows):
         eprint("\n[warn] some MAGs have missing/error array calls; see run.log")
+    _tot = len(rows)
+    _bad = sum(1 for r in rows if r.get("cas1_status") != "ok" or r.get("cas2_status") != "ok")
+    if _bad:
+        eprint(f"\n[WARN] {_bad}/{_tot} MAGs 的 Cas 调用失败。"
+               f"失败样本可能是信息性缺失（本项目中失败的 10 个里有 6 个为阳性），"
+               f"据此得到的百分比不可外推；请先补测再解读。")
     if any(r["cas1_status"] != "ok" or r["cas2_status"] != "ok" for r in rows):
         eprint("[warn] some MAGs have missing/error Cas calls; see run.log")
 
