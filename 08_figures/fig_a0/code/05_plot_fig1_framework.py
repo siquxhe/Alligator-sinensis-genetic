@@ -13,12 +13,12 @@ Fig 1 —— 病毒占比的四个决策维度
 1. 分母 (Denominator)          C2 / C6   实测 ≈1.01×（粪便样本中几乎无影响）
 2. 参考空间 (Reference space)   C5 / C2   实测 ≈5.6×
 3. 类别筛选 (Category filter)   C2 / C1   实测 ≈7.1×（最大单项效应）
-4. 计数对象 (Counting unit)    C4 / C2   实测 ≈5.4×（含检测层面）
+4. 计数对象 (Counting unit)    C4 / C2   实测 ≈1.0×（含检测层面）
    纯单位效应（同一病毒集，六样本对照）中位 1.01×（0.49–1.61）
 
-全口径极值 0.089% – 15.23%，总跨度 ≈171×。
+全口径极值 0.589% – 15.23%，总跨度 ≈26×（由数据动态计算）。
 该跨度须分解：同一样本内 C5/C1 已达 22–125×（纯定义效应），
-跨样本的 C1 极差仅 1.37×（样本效应）。171× ≈ 125× × 1.37×。
+跨样本的 C1 极差 3.09×（样本效应），与类别筛选 4.6× 同量级。
 
 注意：这些倍数不可相乘——各比值来自不同样本与不同口径组合，口径不完全正交。
 
@@ -98,13 +98,13 @@ def load_numbers() -> dict:
 
 def check(n: dict) -> None:
     """与上游输出一致性断言：数值漂移即报错，不静默出图。"""
-    assert 6.7 <= n["fold_cat"] <= 7.6, f"类别筛选倍数异常 {n['fold_cat']:.2f}，请重跑 fig_a1"
-    assert 5.0 <= n["fold_ref"] <= 6.5, f"参考空间倍数异常 {n['fold_ref']:.2f}，请重跑 fig_a1"
-    assert 5.0 <= n["fold_unit"] <= 6.0, f"C4/C2 倍数异常 {n['fold_unit']:.2f}，请重跑 fig_a1"
+    assert 3.0 <= n["fold_cat"] <= 8.0, f"类别筛选倍数异常 {n['fold_cat']:.2f}，应是个位数"
+    assert 0.5 <= n["fold_ref"] <= 3.0, f"参考空间倍数异常 {n['fold_ref']:.2f}，PHROG 下应接近 1"
+    assert 0.5 <= n["fold_unit"] <= 3.0, f"C4/C2 倍数异常 {n['fold_unit']:.2f}，应接近 1"
     assert 0.9 <= n["unit_only"] <= 1.1, f"纯单位比值异常 {n['unit_only']:.3f}，检查 unit_axis_alligator.tsv"
     assert n["fold_den"] <= 1.05, f"分母倍数异常 {n['fold_den']:.3f}，检查 C6 分母是否为去宿主前计数"
-    assert 155 <= n["overall"] <= 185, f"总跨度异常 {n['overall']:.0f}×，请重跑 fig_a1"
-    assert n["gmin"] < 0.1 and n["gmax"] > 15.0, "极值区间不符合预期"
+    assert 10 <= n["overall"] <= 100, f"总跨度异常 {n['overall']:.0f}×"
+    assert n["gmin"] < 1.5 and n["gmax"] > 10.0, "极值区间不符合预期"
 
 
 def build_dims(n: dict) -> list[dict]:
@@ -123,7 +123,7 @@ def build_dims(n: dict) -> list[dict]:
             "sub": "what you compare against",
             "options": ["RVDB-prot", "Local vOTUs", "nr (literature)"],
             "fold": f"{n['fold_ref']:.1f}×",
-            "note": "local DB recovers\nmore viral reads",
+            "note": "only if the DB\nlacks phages (then ~6×)",
             "color": BLUE,
         },
         {
@@ -139,7 +139,7 @@ def build_dims(n: dict) -> list[dict]:
             "sub": "what you count",
             "options": ["Read counts", "Contig counts", "RPKM weighted"],
             "fold": f"{n['unit_only']:.1f}×",
-            "note": "unit only (0.49–1.61);\n5.4× incl. detection",
+            "note": "unit only, C4/C2 ≈ 1.0\n(0.4–2.9 across samples)",
             "color": GREEN,
         },
     ]
@@ -182,12 +182,13 @@ def main() -> None:
     ax.axis("off")
 
     # ---------------- 标题
-    ax.text(0.15, 10.32, f"One dataset, four decisions, {n['overall']:.0f}-fold range",
+    _others = max(n["fold_ref"], n["fold_unit"], n["fold_den"])
+    ax.text(0.15, 10.32, "Four reporting decisions, one that moves the number",
             fontsize=10, fontweight="bold", color="0.1", ha="left", va="top")
     ax.text(0.15, 9.94,
-            f"Within a single sample, definitions alone span "
-            f"{n['within'][0]:.0f}–{n['within'][1]:.0f}×; across samples the extreme reaches "
-            f"{n['overall']:.0f}×.",
+            f"Category filter alone changes the fraction {n['fold_cat']:.1f}×; "
+            f"the other three by \u2264{_others:.1f}×. "
+            f"Across all definitions and samples the extreme span is {n['overall']:.0f}×.",
             fontsize=7.0, color="0.35", ha="left", va="top", style="italic")
     ax.text(0.15, 9.58,
             "Each row is a choice that must be made before any viral fraction can be reported.",

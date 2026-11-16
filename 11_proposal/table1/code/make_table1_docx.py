@@ -46,10 +46,16 @@ NOTES = [
     "during the active phase; their Supplementary Table S19). That study does not specify "
     "how viral sequences were defined beyond referring to that table, and the value could "
     "not be recomputed here because the original ORF alignments were not retained. C3 is "
-    "shown for orientation only and is excluded from every fold-change calculation.",
-    "Viral-like hits were identified with DIAMOND blastx against RVDB-prot v32 Unique "
-    "(alignment length ≥30 aa, identity ≥40%, E ≤ 1e-5). C1 retains only hits annotated to "
-    "structural or replication/transcription categories; C2 applies no category filter.",
+    "shown for orientation only and is excluded from every fold-change calculation. "
+    "Its upper bound (4.03%) nevertheless falls inside the C2 range reported here "
+    "(2.89-4.71%), while its lower bound lies two orders of magnitude below the C1 minimum; "
+    "the original definition therefore appears to sit near the broad end of this spectrum.",
+    "Viral-like hits were identified with DIAMOND blastx against PHROG v4 (868,340 phage "
+    "proteins; alignment length ≥30 aa, identity ≥40%, E ≤ 1e-5). C1 retains only hits "
+    "annotated to structural or replication/transcription categories under the PHROG "
+    "ontology; C2 applies no category filter. An earlier version used RVDB-prot v32 Unique, "
+    "which contains almost no phage proteins and depressed all protein-level estimates "
+    "roughly six-fold; the cross-library comparison is reported in the main text.",
     "Contigs were assembled with MEGAHIT and classified with geNomad; vOTUs were clustered "
     "with CD-HIT-EST at 95% identity and 85% coverage of the shorter sequence (n = 9,980).",
     "Values are given at the precision produced by the analysis pipeline; fold changes "

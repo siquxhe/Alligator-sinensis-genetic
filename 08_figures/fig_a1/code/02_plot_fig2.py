@@ -5,7 +5,7 @@ Fig 2 —— 五口径下"病毒占比"的跨度
 科学论断
 --------
 同一批 6 个宏基因组，仅因"口径"不同（严格性 / 参考空间 / 统计单元），
-病毒占比可以从 0.089% 变到 15.23%，跨度 171 倍。
+病毒占比可以从 0.589% 变到 15.23%，跨度约 26 倍（数值由数据动态计算，不硬编码）。
 
 面板
 ----
@@ -72,6 +72,16 @@ def style() -> None:
 def main() -> None:
     style()
     t = pd.read_csv(OUT / "Table1_five_denominators.tsv", sep="\t")
+
+    # ---- 跨度动态计算：不得硬编码（防止数据变了图不变）----
+    _SAN = ["W1", "W2", "W3", "S1", "S2", "S3"]
+    _g = t[t["口径"].isin(["C1", "C2", "C4", "C5"])][_SAN].apply(pd.to_numeric, errors="coerce")
+    VMIN, VMAX = float(_g.min().min()), float(_g.max().max())
+    SPAN = VMAX / VMIN
+    assert 0.1 < VMIN < 3.0, f"最小值异常 {VMIN}"
+    assert 8.0 < VMAX < 25.0, f"最大值异常 {VMAX}"
+    assert 10.0 < SPAN < 60.0, f"跨度异常 {SPAN:.1f}，检查数据源"
+    print(f"  动态跨度: {VMIN:.3f}% – {VMAX:.2f}% = {SPAN:.1f}×")
     t = t.set_index("口径")
 
     fig, (ax1, ax2) = plt.subplots(
@@ -113,7 +123,7 @@ def main() -> None:
             ax1.hlines(np.median(vals), j - 0.28, j + 0.28, color="0.25", linewidth=1.0, zorder=2)
 
     ax1.set_yscale("log")
-    ax1.set_ylim(0.05, 40)
+    ax1.set_ylim(0.028, 40)   # 下界需容纳 C3 文献区间 0.04%
     ax1.set_xticks(xpos)
     ax1.set_xticklabels([LABELS[c] for c in codes], fontsize=6.5)
     ax1.set_ylabel("Viral fraction of reads (%)")
@@ -125,16 +135,16 @@ def main() -> None:
     ax1.grid(axis="y", color="0.9", linewidth=0.5, zorder=0)
     ax1.set_axisbelow(True)
 
-    # 171× 跨度标注（放在 C1 左侧，避开数据点）
+    # 跨度标注（数值动态计算）（放在 C1 左侧，避开数据点）
     ax1.annotate(
         "",
-        xy=(-0.42, 0.0891),
-        xytext=(-0.42, 15.23),
+        xy=(-0.42, VMIN),
+        xytext=(-0.42, VMAX),
         arrowprops=dict(arrowstyle="<->", color="#D55E00", linewidth=0.9, shrinkA=0, shrinkB=0),
     )
-    # 171× 为"全口径 × 全样本"的 min–max 跨度，非同一样本内的比较（见 figA1_log）
+    # 为"全口径 × 全样本"的 min–max 跨度，非同一样本内的比较（见 figA1_log）
     ax1.text(
-        -0.66, 1.15, "171×\noverall", color="#D55E00", fontsize=8.0, fontweight="bold",
+        -0.66, (VMIN * VMAX) ** 0.5, f"{SPAN:.1f}×\noverall", color="#D55E00", fontsize=8.0, fontweight="bold",
         rotation=90, ha="center", va="center", linespacing=1.2,
     )
     ax1.set_xlim(-0.85, 5.45)
@@ -179,7 +189,7 @@ def main() -> None:
     ax2.set_xticks([1, 2, 3, 4])
     ax2.set_xticklabels(
         ["category filter\nC2 / C1", "reference space\nC5 / C2",
-         "statistical unit\nC4 / C2", "denominator\nC2 / C6"],
+         "counting unit\nC4 / C2", "denominator\nC2 / C6"],
         fontsize=5.6,
     )
     ax2.set_ylabel("Fold change")
