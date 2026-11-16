@@ -71,7 +71,9 @@ def load_numbers() -> dict:
     fold_den = float(np.max(c2 / c6))        # 分母（取最大影响）
 
     # 同一批定义、同一样本内的定义效应
-    within = c5 / c1
+    # 样本内跨度：四个参与计算的口径(C1/C2/C4/C5)在单个样本内的极差
+    _m = np.vstack([c1, c2, c4, c5])
+    within = _m.max(axis=0) / _m.min(axis=0)
     # 样本效应：固定最严口径 C1 时的跨样本极差
     sample_effect = float(c1.max() / c1.min())
 
@@ -259,7 +261,7 @@ def main() -> None:
     print(f"  类别筛选 C2/C1  {n['fold_cat']:.2f}×")
     print(f"  计数对象 C4/C2  {n['fold_unit']:.2f}×（含检测层面）")
     print(f"  纯单位效应      {n['unit_only']:.3f}×（同一病毒集，六样本中位）")
-    print(f"  同一样本内 C5/C1 {n['within'][0]:.1f}–{n['within'][1]:.1f}×")
+    print(f"  同一样本内 四口径极差 {n['within'][0]:.1f}–{n['within'][1]:.1f}×")
     print(f"  样本效应         {n['sample_effect']:.2f}×")
     print(f"  总跨度           {n['overall']:.0f}×  ({n['gmin']:.4g}% – {n['gmax']:.4g}%)")
 
