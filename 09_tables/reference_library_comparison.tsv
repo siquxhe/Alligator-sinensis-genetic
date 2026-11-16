@@ -1,0 +1,5 @@
+﻿library	proteins	total_pct	strict_pct	ratio_total_over_strict	annotation_system	note
+RVDB_project	783103	0.839	0.100	6.85	keyword	项目原用库；噬菌体蛋白严重不足；关键词分类偏宽
+RefSeq_viral	722823	1.649	0.457	3.61	keyword	参考病毒基因组；环境噬菌体覆盖不足；视为下限
+SelfBuild_vOTU_PHROGanno	1016829	3.929	0.778	5.05	PHROG_ontology	19,789 vOTU 自建库；34.6% 蛋白获 PHROG 注释
+PHROG	868340	5.790	1.120	5.17	PHROG_ontology	噬菌体专用；主估计
