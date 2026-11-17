@@ -113,4 +113,6 @@ desktop.ini
 
 # ---------- 本地状态（每台机器不同，不入库）----------
 # Zotero 导入记录：本机已导入 refs.ris 三次，重导会产生重复条目
-/11_proposal/references/IMPORTED.md
+# 本地 Zotero 导入记录，含本机信息，不入库
+# 用裸文件名而非固定路径——目录重排后固定路径会静默失效
+IMPORTED.md
