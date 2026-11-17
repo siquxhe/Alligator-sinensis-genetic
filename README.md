@@ -44,7 +44,7 @@
 | `11_proposal/_shared/` | 科研总计划、系统迁移清单、早期任务表与方向备忘 |
 | `12_second_dataset/` | 鸡肠道公共数据的外部校验（G-A1） |
 | `13_calibration/` | 参考库核查、PHROG 标定、六样本重算、掺入校准 |
-| `14_library/` | 旧文献库目录，仅存作废的 v1 计划 |
+| `14_library/` | **统一文献库**：`Microbiomics.ris`（128 条）+ 核查记录；Zotero 为主库，RIS 为快照。v1 服务器文库计划已作废，留档 |
 | `15_tickets/` | **工单**：看板与三条线的身份登记（新会话先读这里） |
 | `workflow/` | 主流程脚本、图脚本、汇总脚本、`versions.txt`（工具版本与 Windows 适配记录） |
 

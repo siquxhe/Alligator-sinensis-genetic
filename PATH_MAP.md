@@ -30,6 +30,8 @@
 `07_cargo`、`07_mag`、`07_network`、`08_figures`、`09_tables`、`12_second_dataset`、`13_calibration`、
 `14_library`、`workflow`。
 
+> 其中 `03_assembly`、`04_viral`、`05_mag`、`06_crispr`、`07_network` **本机不存在**：它们是流水线中间产物目录，被 `.gitignore` 排除（第 12–16 行），只在服务器上（见 `DATA_LOCATIONS.md`）。本表列出是为说明"这几个不参与重排"，不是断言仓库里有。
+
 ## 二、单文件（共 57 条，按新路径排序）
 
 | # | 旧路径 | 新路径 |
@@ -72,13 +74,13 @@
 | 36 | `11_proposal/改稿方案_v1_2026-11-16.md` | `11_proposal/MS01/plans/改稿方案_v1_2026-11-16.md` |
 | 37 | `11_proposal/论文提纲_方法学_2026-11-10.md` | `11_proposal/MS01/plans/论文提纲_方法学_2026-11-10.md` |
 | 38 | `11_proposal/论文提纲_方法学_v2_2026-11-12.md` | `11_proposal/MS01/plans/论文提纲_方法学_v2_2026-11-12.md` |
-| 39 | `11_proposal/references/Microbiome_Reptile_Immune.ris` | `11_proposal/MS01/references/Microbiome_Reptile_Immune.ris` |
+| 39 | `11_proposal/references/Microbiome_Reptile_Immune.ris` | `14_library/Microbiomics.ris` ※ |
 | 40 | `11_proposal/references/code/make_refs.py` | `11_proposal/MS01/references/code/make_refs.py` |
 | 41 | `fmicb-10-02409.pdf` | `11_proposal/MS01/references/pdf/fmicb-10-02409.pdf` |
 | 42 | `11_proposal/references/references_table.docx` | `11_proposal/MS01/references/references_table.docx` |
 | 43 | `11_proposal/references/references_table.md` | `11_proposal/MS01/references/references_table.md` |
 | 44 | `11_proposal/references/refs.ris` | `11_proposal/MS01/references/refs.ris` |
-| 45 | `11_proposal/references/文献集核查_Microbiome_Reptile_Immune_2026-11-17.md` | `11_proposal/MS01/references/文献集核查_Microbiome_Reptile_Immune_2026-11-17.md` |
+| 45 | `11_proposal/references/文献集核查_Microbiome_Reptile_Immune_2026-11-17.md` | `14_library/文献集核查_Microbiomics_2026-11-17.md` ※ |
 | 46 | `11_proposal/table1/Table1_正式稿_2026-11-13.md` | `11_proposal/MS01/tables/table1/Table1_正式稿_2026-11-13.md` |
 | 47 | `11_proposal/table1/code/make_table1_docx.py` | `11_proposal/MS01/tables/table1/code/make_table1_docx.py` |
 | 48 | `11_proposal/table1/output/Table1_six_definitions.docx` | `11_proposal/MS01/tables/table1/output/Table1_six_definitions.docx` |
@@ -94,8 +96,11 @@
 
 ## 三、当前骨架
 
+> ※ 第 39、45 条为二次调整：2026-11-17 确认该 RIS 是**统一文库**而非 MS-01 私有引用集，故先入 `11_proposal/MS01/references/`、当日再移至 `14_library/` 并更名 `Microbiomics.ris`。表中填的是最终位置。
+
+
 ```
-261105/
+<仓库根>/
 ├── 00_db/ 03_assembly/ 04_viral/ ... 13_calibration/   分析流水线（未动）
 ├── 08_figures/   Fig 1–3 源码与产物
 ├── 09_tables/    数据表（TSV，数源）
@@ -118,7 +123,7 @@
 │   └── _shared/          科研计划、系统迁移、任务表、方向备忘、PriorArt
 ├── 12_second_dataset/   鸡肠道（G-A1）
 ├── 13_calibration/      掺入校准
-├── 14_library/          旧文献库目录（仅存作废 v1）
+├── 14_library/          统一文献库：Microbiomics.ris + 核查记录（v1 计划已作废，留档）
 ├── 15_tickets/          工单（本机制入口）
 ├── workflow/            流水线脚本与工具
 ├── README.md
