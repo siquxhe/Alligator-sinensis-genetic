@@ -128,7 +128,7 @@ Every fold change above rests on the assumption that the measurement itself is a
 | 样本内极差 4.7–8.4 | 逐样本极值 | `02_plot_fig2.py` 运行时输出 |
 | 样本效应 1.6 / 3.1 / 7.1 | C2 / C1 / C5 极差 | 同上 |
 | 四库比值 3.6–6.9 | 四库交叉验证 | `09_tables/reference_library_comparison.tsv` |
-| 序列来源 5.05 vs 5.17 | sub.fq vs 全量 | `phrog_library_report.md` |
+| 序列来源 5.05 vs 5.17 | sub.fq vs 全量 | `10_reports/MS01/phrog_library_report.md` |
 | 90% 阈值 4.4、诱饵 0 命中 | 阈值扫描与诱饵 | `13_calibration/参考库核查_2026-11-15.md` |
 | PHROG 构成 19.3 / 55.2 / 10.4 / 10.6 / 4.0 | 宽口径命中分类 | `phrog_6samples.tsv` + 类别分解 |
 | 命中 0.84 → 4.17% | RVDB 对 PHROG | `参考库核查_2026-11-15.md` |
