@@ -1,0 +1,7 @@
+target	scenario	n_receptor_required	label
+metagenome_3pct_coverage	known	33.333333333333336	coverage parity with metagenome (3%)
+metagenome_3pct_coverage	unknown	33.333333333333336	coverage parity with metagenome (3%)
+env_high_1e10	known	0.1111111111111111	V_min <= 1e+10
+env_high_1e10	unknown	1.1111111111111112	V_min <= 1e+10
+env_low_1e4	known	111111.11111111111	V_min <= 1e+04
+env_low_1e4	unknown	1111111.111111111	V_min <= 1e+04

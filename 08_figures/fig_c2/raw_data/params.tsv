@@ -1,0 +1,10 @@
+symbol	meaning	baseline	low	high	source	note
+per_receptor_fraction	单个功能受体在群落病毒中的使用比例	0.0009	0.0005	0.001	Zeng & Salmond 2020 (1 of 1100)	按 1/1100 ≈ 0.09%
+n_receptor	同一菌株可同时功能表达的受体数	1	1	30	骨架 §4.1	合成生物学工程上限，非测量值
+i	injection	0.1	0.01	0.5	outline §3	order-of-magnitude
+s	spacer acquisition after infection	0.0001	0.000001	0.001	outline §3	EcRec 1/10^6 为悲观锚点
+q_known	spacer 可匹配已知库	0.1	0.01	0.5	outline §3	Snyder 2010 ~28%, Shang 2025 <5%
+q_unknown	spacer 可匹配未知病毒	0.01	0.01	0.1	outline §3	unknown 病毒 30-40 bp 难组装/分类
+metagenome_fraction	宏基因组实测病毒占比	0.03	0.0289	0.0471	MS-01 phrog_6samples.tsv	宽口径 PHROG
+env_abundance_low	环境病毒丰度下限 (particles/mL)	10000	10000	10000	outline §3	vOTU/海洋样本典型
+env_abundance_high	环境病毒丰度上限 (particles/mL)	10000000000	10000000000	10000000000	outline §3	高生物量样本

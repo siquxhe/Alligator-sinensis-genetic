@@ -1,0 +1,4 @@
+lever	anchor_value	needed_value	needed_multiple	unit	note
+n_receptor	30.0	111111.1111111111	3703.703703703703	receptors	coverage alone; >1e5 receptors is not an engineering question
+sample_volume_v	1.0	3703.703703703703	3703.703703703703	mL	3.7 L per sample; practical ceiling ~100 mL (outline §3)
+i*s*q	1.0000000000000002e-06	0.003703703703703704	3703.703703703703	per phage	needs 3.7e3x over baseline; most optimistic set gives 250x

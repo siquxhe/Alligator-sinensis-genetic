@@ -23,7 +23,7 @@
 
 > **Proposed Perspective: Recording is not discovery — bounding the use of CRISPR spacer recorders for virus surveillance**
 >
-> CRISPR spacer acquisition has been engineered into a molecular recorder, and engineered bacteria expressing heterologous phage receptors have been proposed as “bait” to detect viruses by sequencing the spacers acquired after infection. We argue that this proposal conflates molecular recording with virus discovery. Using a simple detection model parameterized with published data, we show that the probability of recording a virus is the product of receptor coverage, injection efficiency, survival/spacer acquisition, and database matching. Under optimistic assumptions, the detection floor is ~10⁵ particles/mL; under realistic assumptions for unknown viruses, it exceeds 10⁸ particles/mL, above the abundance of most environmental targets. We do not claim that receptor baiting or spacer-based virus detection is new—both have precedent. We provide the first systematic boundary analysis of their combination, a decision framework that distinguishes targeted recording from unbiased discovery, and a reporting checklist for future recording studies. The perspective will interest virologists, microbiome researchers, synthetic biologists, and environmental surveillance programs, and will help prevent overinterpretation of recording signals.
+> CRISPR spacer acquisition has been engineered into a molecular recorder, and engineered bacteria expressing heterologous phage receptors have been proposed as “bait” to detect viruses by sequencing the spacers acquired after infection. We argue that this proposal conflates molecular recording with virus discovery. Using a simple detection model parameterized with published data, we show that the probability of recording a virus is the product of receptor coverage, injection efficiency, survival/spacer acquisition, and database matching. Under optimistic assumptions, the detection floor is ~10⁵ particles/mL; under realistic assumptions for unknown viruses, it exceeds 10⁸ particles/mL, above the abundance of most environmental targets. We do not claim that receptor baiting or spacer-based virus detection is new—both have precedent. We provide, to our knowledge, the first systematic boundary analysis of their combination, a decision framework that distinguishes targeted recording from unbiased discovery, and a reporting checklist for future recording studies. The perspective will interest virologists, microbiome researchers, synthetic biologists, and environmental surveillance programs, and will help prevent overinterpretation of recording signals.
 
 **字数** 约 190 词。**卖点** 不是“新方法”，是“边界 + 决策框架 + 报告标准”。
 
@@ -76,7 +76,7 @@ CRISPR spacer acquisition is a natural memory of viral infection and has been en
   - 检出下限 \(V_{min} = 1/(v \times P)\)（E=1）
   - 更一般：\(E = N_c \times M \times P\)，\(M\) = MOI
 - **2.3 Parameter table**：见第 3 节。
-- **2.4 Sensitivity**：热图 \(V_{min}\) vs \(r\) 和 \(s\)；分别给 known virus（q=0.5）与 unknown virus（q=0.01）。
+- **2.4 Sensitivity**：Panel A 画 \(V_{min}\) 对受体数 \(n\)（\(r = n \times 0.09\%\)）在固定 \(v=1\) mL、基线 \(i,s,q\) 下；known 与 unknown 各一条（q=0.1 / 0.01）。Panel B 画 \(n \times s\) 热图（known），说明获取效率如何整体平移包络。合取关系（\(n \times v \times i·s·q\)）由 Supplementary 表承担。现成图：`08_figures/fig_c2/`。
 - **2.5 Sanity checks**：
   - EcRec 1/10⁶ 是供体细胞锚点，不是噬菌体 LOD。
   - Modell 2017 / Keith 2025：记录偏向早期注入区/温和噬菌体。
@@ -147,7 +147,7 @@ Checklist：
 
 | 符号 | 含义 | 乐观（known） | 现实（known） | 现实（unknown） | 悲观（unknown） | 出处/备注 |
 |---|---|---|---|---|---|---|
-| \(r\) | 使用表达受体的噬菌体比例 | 0.01（1%） | 0.001（0.1%） | 0.001（0.1%） | 0.0001（0.01%） | 宿主范围研究；Zeng & Salmond 2020 证明诱饵可富集，但只覆盖特定受体 |
+| \(r\) | 使用表达受体的噬菌体比例 | 0.01（1%） | 0.001（0.1%） | 0.001（0.1%） | 0.0001（0.01%） | **分解**：`r ≈ n × 0.09%`（Zeng & Salmond 2020，1100 个噬菌体中 1 个）。1% 需 11 个功能受体，3% 需 33 个 |
 | \(i\) | 结合后成功注入概率 | 0.5 | 0.1 | 0.1 | 0.01 | 噬菌体生物学；FhuA/TonB 依赖因噬菌体而异 |
 | \(s\) | 感染后存活并获取可检出 spacer 的概率 | 10⁻³ | 10⁻⁴ | 10⁻⁴ | 10⁻⁶ | EcRec 1/10⁶ 作为悲观锚点（供体细胞，非噬菌体）；Keith 2025 溶原提高获取 |
 | \(q\) | spacer 能匹配数据库/组装的概率 | 0.5 | 0.1 | 0.01 | 0.01 | Snyder 2010 ~28% 探针；Shang 2025 预测率 <5% |
@@ -169,7 +169,17 @@ Checklist：
 
 **论文的结论句式**：
 
-> Under optimistic assumptions, the detection floor is ~10⁵ particles/mL; under realistic assumptions for unknown viruses, it exceeds 10⁸ particles/mL. Because most environmental targets are below 10⁶–10⁸ particles/mL, the method is at or beyond its detection limit for unbiased discovery. It remains useful only in the narrow regime where receptor coverage, acquisition efficiency, and database matching are all high—i.e., targeted, known-receptor questions.
+> **The detection floor is the product of three terms that cannot substitute for one another**: receptor coverage (`r = n × 0.09%`), sample volume (`v`), and infection-to-detectable-spacer efficiency (`i·s·q`). At the realistic engineered corner (n = 30, v = 1 mL, baseline `i·s·q`), the floor is 3.7 × 10⁷ particles/mL (known) and 3.7 × 10⁸ (unknown). Each term must move about 3.7 × 10³-fold on its own to reach the low-abundance end; only when all three are pushed to their optimistic ends does the floor fall to 10³. **Any one term reverting to baseline returns the floor above 10⁵.** The method is therefore usable in the high-abundance tail of environmental samples, and in targeted, known-receptor questions—not for unbiased discovery.
+
+**三项分解（2026-11-20 补，替换原"上界被工程钉住"的说法）**
+
+| 可调项 | 锚点 | 独自达标所需 | 现实性 |
+|---|---|---|---|
+| 受体数 `n` | 30 | 1.1×10⁵ 个 | 无此可能 |
+| 处理体积 `v` | 1 mL | 3.7 L | 水样勉强，肠道/组织不可能 |
+| `i·s·q` | 10⁻⁶ | 3.7×10⁻³（3700×） | 三项全乐观也只有 2.5×10⁻⁴ |
+
+**`n = 33` 是覆盖率等值点，不是检出边界。** 33 个受体让 `r` 追平宏基因组的 3%，但那一行的 `V_min` 仍是 3.7×10⁷——只覆盖环境丰度带的高端。把"33 个受体 = 工程边界"当主要论据，等于承认"再努力一点可能做到"；真正的边界在 10⁵ 个受体与 3.7 L 样本。计算与合取表见 `08_figures/fig_c2/`。
 
 ### 3.2 模型假设（必须写进 Methods/Supplementary）
 
