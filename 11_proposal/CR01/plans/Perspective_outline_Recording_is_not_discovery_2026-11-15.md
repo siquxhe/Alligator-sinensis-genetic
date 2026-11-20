@@ -5,11 +5,16 @@
 **目标期刊** *Trends in Microbiology* (Opinion) → *CRISPR Journal* (Perspective) → *mSystems* (Perspective) → *BioEssays* (Prospects) → *Frontiers in Microbiology* (Perspective)
 **核心文献底图** `10_reports/CR01/文献地图_CRISPR记录与病毒发现_2026-11-14.md`
 
-> **2026-11-16 修订指针**：本 outline 的 §2/§3 论证主轴为「检测限模型 + 七条偏差清单」，属工程评估。已另立**生物学原理版论证框架**：`11_proposal/CR01/plans/生物学原理版论证框架_2026-11-16.md`。
+> **2026-11-20 准据指针（取代 11-16 的旧指针）**
 >
-> 该框架把七个偏差合并为**五层生物学机制**（受体多对多 / 注入依赖底盘 / 记录的是防御成功 / 丰度重尾 / 参考库按培养历史分层），每层给「事实 → 推论 → 后果 → 可检验预言」。
+> 论证主线以 **`论文骨架_v2_2026-11-16.md`** 为准，三条界线：
+> ①spacer 是索引不是证据 ②产出形态不可回溯 ③检出下限是三项乘积（`n × v × i·s·q`）。
 >
-> **写作时以生物学版为准**：§3 按五层重写；§2 保留公式但重述四个因子的性质（不是待优化参数，是结构性偏斜）。本 outline 其余部分（§1、§4、§5、文献底图、投稿策略）仍然有效。
+> `生物学原理版论证框架_2026-11-16.md` 已**降级为支撑层**——五层只作机制解释，不得当骨架用
+> （理由见工单 §五风险表第一条：五层每一层都能被"我优化一下"回应，退回五层等于重开这个口子）。
+>
+> 本 outline 的 §2（检测模型）对应骨架 §4；§3（七条偏差）已被骨架 §5 取代。
+> §1（问题错位）、§4（窄场景）、§5（报告标准）、文献底图与投稿策略仍然有效。
 
 ---
 
@@ -40,6 +45,9 @@
 - *Beyond the bait: a decision framework for virus discovery and targeted recording*
 
 ### Abstract（150–200 词，投稿时再压缩）
+
+> **⚠ 以下为 2026-11-15 旧版草稿**：写于三条界线与 Fig 2 之前，落点是"bias structure（受体特异性、裂解/温和选择、anti-CRISPR…）"，与现行骨架不是同一篇文章。
+> **仅供语感参考，不可直接使用**。现行摘要口径见骨架 §六与 `CR01_系统检索记录`。
 
 CRISPR spacer acquisition is a natural memory of viral infection and has been engineered into a molecular recorder. A recent proposal combines engineered bacteria expressing heterologous phage receptors (“bait”) with spacer sequencing to identify viruses in environmental samples. We show that this application conflates recording with discovery. We develop a simple detection model in which the per-phage recording probability is the product of receptor coverage, injection efficiency, survival/spacer acquisition, and database matching. Parameterized with published data, the model predicts that the detection floor ranges from ~10⁵ particles/mL under optimistic assumptions to >10⁸ particles/mL for unknown viruses under realistic assumptions—above the abundance of most environmental targets. We identify the bias structure (receptor specificity, lytic/temperate selection, anti-CRISPR, spacer length, database completeness) and propose a decision framework that separates targeted recording from unbiased discovery. We also provide a reporting checklist (LOD, spike-in, controls, Acr status, bias, database version). Our analysis does not argue that recording is useless; it defines when recording is the right tool and when metagenomics, viral tagging, or receptor biosensors are better.
 
