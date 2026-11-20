@@ -1,5 +1,10 @@
 # Manuscript front half — English v0.3
 
+> **已被 v0.4 取代（2026-11-20 标注）**：本文是 2026-11-17 的快照，其中 "roughly six-fold" 一项已被纠正——
+> 同样本同参数为 **4.96×**，匹配实验为 **6.89×**，两者相差 40% 且不调和。
+> 数字与正文一律以 `manuscript_v0.4_full_EN_2026-11-19.md` 为准；本文保留作版本对照，不再单独维护。
+
+
 **日期** 2026-11-17　|　**范围** Title / Abstract / Introduction / Results 5.1–5.4
 **状态** 投稿英文稿第一版，由中文 v0.2 回译并逐数核对；Methods、Discussion 未写
 **约定** `[CIT-n]` 为待补引用占位，**不得凭印象填写**；数值全部取自 Table 1 / Table 2 / Fig 1–3 与 `13_calibration/`
