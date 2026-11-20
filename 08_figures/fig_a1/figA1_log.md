@@ -1,5 +1,12 @@
 # Fig A1 / Table 1 —— 六口径下的病毒占比（五定义 + 一分母对照）
 
+> **⚠ 本日志记录的是 RVDB 口径（2026-11-16 之前）**。其中的 171×、0.089–0.122%、22.2–124.8×、
+> 7.1 / 5.6 / 5.4 等值，均已被 2026-11-16 的 PHROG v4 换库重算取代
+> （现行：**25.9×**、0.589–1.818%、4.7–8.4×、4.6 / 1.1 / 1.0）。
+> **历史数值按原样保留以存过程，不得再引用。** 当前数值见 `09_tables/Table1_six_definitions.tsv`、
+> `09_tables/phrog_6samples.tsv`、`13_calibration/PHROG六样本_2026-11-16.md`。重出记录见文末。
+
+
 **日期** 2026-11-12　|　**状态** 已完成 v2（加入 C6 分母对照）
 **对应论文** A 线（方法学短论文）Fig 2 + Table 1
 
@@ -105,3 +112,32 @@ python code/02_plot_fig2.py                   # 生成 output/Fig2_*
 - [x] Fig 1：四维分类框架图（`08_figures/fig_a0/`）
 - [ ] 用户审核 Fig 1 / Fig 2 / Table 1
 - [ ] 待定：`09_tables/viral_function_profile.tsv` 的 `viral_specific_pct` 已改名 `strict_share_of_hits_pct`（其分母是病毒样命中数，与本表的 `viral_specific_pct` 语义不同）
+
+---
+
+## 2026-11-16 重出（PHROG 换库）
+
+**原因**：RVDB-prot v32 Unique 系统性缺噬菌体蛋白（其构建原则明确排除细菌病毒），
+使 C1 严格口径低至 0.089%、总跨度虚高至 171×。换 PHROG v4（868,340 蛋白）后全部重算。
+定量依据：同版本同参数只换库，RVDB 0.800% vs PHROG 5.511% = **6.89×**
+（`13_calibration/库效应分离_2026-11-19.md`）。
+
+**重出时间** 2026-11-16 20:57　|　**产物** `output/Fig2_five_denominators.{pdf,png}`、
+`output/Table1_five_denominators.tsv`　|　**旧版** `output/Table1_five_denominators_v1_old.tsv`
+
+| 量 | 旧（RVDB） | 新（PHROG v4） |
+|---|---|---|
+| 总跨度 | 171× | **25.9×** |
+| C1 严格 | 0.089–0.122% | **0.589–1.818%** |
+| 类别筛选 | 7.07× | **4.64×** |
+| 参考空间 | 5.58× | **1.14×** |
+| 样本内极差 | 22.2–124.8× | **4.7–8.4×** |
+| 样本效应 | 1.37× | 3.1×（C1）/ 1.6×（C2）/ 7.1×（C5） |
+
+**生成脚本状态（2026-11-19 复核）**：`code/01_compute_five_denominators.py` 读 `raw_data/` 下
+2026-11-12 的 RVDB 中间表，与现行 Table 1 已脱钩，**已加停用警告**——直接运行会覆写为旧数。
+现行 Table 1 由 `11_proposal/MS01/tables/table1/code/make_table1_docx.py` 从 `phrog_6samples.tsv`
+生成，并逐格校验；Fig 2 由 `02_plot_fig2.py` 从 `output/Table1_five_denominators.tsv` 读取，
+内置三条断言（最小值 / 最大值 / 跨度），旧数会触发 `跨度异常` 报错。
+
+**复核结论**：六个定义与 `phrog_6samples.tsv` 逐格一致；Fig 2 与 Table 1 同源。

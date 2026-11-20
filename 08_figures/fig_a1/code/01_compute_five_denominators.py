@@ -2,6 +2,17 @@
 """
 五口径病毒占比计算 —— Table 1 与 Fig 2 的数据源
 
+.. warning::
+   **本脚本已停用（2026-11-19）**。它读 ``raw_data/`` 下 2026-11-12 的 RVDB 口径中间表，
+   而 Table 1 已于 2026-11-16 换为 PHROG v4 口径（C1/C2 来自 ``09_tables/phrog_6samples.tsv``）。
+   直接运行会用 RVDB 旧数覆写 ``output/Table1_five_denominators.tsv``，
+   使 C1 最小值回退到 0.089%、跨度回到 171×——而 Fig 2 的断言（10 < SPAN < 60）会失败。
+
+   现行 Table 1 由 ``11_proposal/MS01/tables/table1/code/make_table1_docx.py``
+   从 ``phrog_6samples.tsv`` 生成并逐格校验。
+   若确需重建：C1/C2 改从该表读取；C4（geNomad contig）与 C5（vOTU）的输入仍在
+   ``raw_data/``，未受换库影响；C6 分母来自 ``host_removal_summary.tsv``，同样未变。
+
 科学问题
 --------
 同一批肠道宏基因组，"病毒占比"在不同定义下差多少？
