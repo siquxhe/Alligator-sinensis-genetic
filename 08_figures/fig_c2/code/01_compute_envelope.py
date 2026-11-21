@@ -61,11 +61,16 @@ for target_name, target in [("metagenome_3pct_coverage", None),
         if target is None:
             n = meta / pr                      # coverage parity, q-independent
             label = "coverage parity with metagenome (3%)"
+            reach = True
         else:
             n = n_required(target, q)
             label = f"V_min <= {target:.0e}"
+            # r = n*pr 是"使用已表达受体的病毒比例"，物理上限为 1。
+            # 解出的 n 若使 r>1，则该目标无法仅靠增加受体达成——线性外推出了定义域。
+            reach = (n * pr) <= 1.0
         budget.append({"target": target_name, "scenario": tag,
-                       "n_receptor_required": n, "label": label})
+                       "n_receptor_required": n, "label": label,
+                       "reachable_by_receptors_alone": reach})
 budget = pd.DataFrame(budget)
 budget.to_csv(MAT / "receptor_budget.tsv", sep="\t", index=False)
 
@@ -148,11 +153,15 @@ for n in (1, 3, 10, 30):
 lines.append("")
 lines.append("Receptor budget")
 for _, row in budget.iterrows():
-    lines.append(f"  {row['label']:<44} {row['scenario']:<8} n = {row['n_receptor_required']:.3g}")
+    note = "" if row["reachable_by_receptors_alone"] else "  <- 不可达：需 r>1（受体单独不成立）"
+    lines.append(f"  {row['label']:<44} {row['scenario']:<8} n = {row['n_receptor_required']:.3g}{note}")
 lines.append("")
 lines.append("Most optimistic corner (n=30, i=0.5, s=1e-3, q=0.5)")
 lines.append(f"  r = {best['r']:.4f}, P = {best['P']:.2e}, V_min = {best['V_min']:.2e} particles/mL")
 lines.append(f"  -> {'still above' if best['V_min'] > env_lo else 'reaches'} the low-abundance end ({env_lo:.0e})")
+lines.append("")
+lines.append("Receptor ceiling (r = 1, i.e. n = 1/%.4f = %.0f receptors)" % (pr, 1 / pr))
+lines.append(f"  baseline i/s/q: V_min = {vmin(1 / pr):.2e}  -> receptors alone cannot reach {env_lo:.0e}")
 lines.append("")
 lines.append(f"Three levers, each moved ALONE (anchor n=30, v=1 mL, baseline i/s/q = {anchor:.2e})")
 lines.append(f"  to reach {env_lo:.0e}: P must rise by {factor:.3g}x")

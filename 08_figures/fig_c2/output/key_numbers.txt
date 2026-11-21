@@ -18,12 +18,15 @@ Receptor budget
   coverage parity with metagenome (3%)         unknown  n = 33.3
   V_min <= 1e+10                               known    n = 0.111
   V_min <= 1e+10                               unknown  n = 1.11
-  V_min <= 1e+04                               known    n = 1.11e+05
-  V_min <= 1e+04                               unknown  n = 1.11e+06
+  V_min <= 1e+04                               known    n = 1.11e+05  <- 不可达：需 r>1（受体单独不成立）
+  V_min <= 1e+04                               unknown  n = 1.11e+06  <- 不可达：需 r>1（受体单独不成立）
 
 Most optimistic corner (n=30, i=0.5, s=1e-3, q=0.5)
   r = 0.0270, P = 6.75e-06, V_min = 1.48e+05 particles/mL
   -> still above the low-abundance end (1e+04)
+
+Receptor ceiling (r = 1, i.e. n = 1/0.0009 = 1111 receptors)
+  baseline i/s/q: V_min = 1.00e+06  -> receptors alone cannot reach 1e+04
 
 Three levers, each moved ALONE (anchor n=30, v=1 mL, baseline i/s/q = 3.70e+07)
   to reach 1e+04: P must rise by 3.7e+03x
